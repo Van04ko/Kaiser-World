@@ -1,0 +1,28 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_provision"
+		texturefile = "gfx/provision.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bread"
+		texturefile = "gfx/bread.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bloody"
+		texturefile = "gfx/bloody.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_fishr"
+		texturefile = "gfx/fishr.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_shlem"
+		texturefile = "gfx/shlem.dds"
+		legacy_lazy_load = no
+	}
+
+}

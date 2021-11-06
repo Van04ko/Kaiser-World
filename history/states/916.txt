@@ -1,0 +1,33 @@
+
+state={
+	id=916
+	name="STATE_916"
+	manpower = 553130
+	
+	resources={
+      grain = 6
+	}
+	state_category = city
+	
+	history={
+		owner = KVJ
+		add_core_of = KVJ
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+			sklad = 2
+
+		}
+		victory_points = {
+			10433 5 
+		}
+	}
+
+	provinces={
+		10433   
+	}
+}

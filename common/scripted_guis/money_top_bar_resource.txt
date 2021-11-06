@@ -1,0 +1,46 @@
+scripted_gui = {
+
+	money = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "money_container"
+		visible = {
+            always=yes
+		}
+
+
+	}
+
+	inflation = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "inflation_container"
+		visible = {
+            always=yes
+		}
+
+
+	}
+	schastie = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "schastie_container"
+		visible = {
+            always=yes
+		}
+
+
+	}
+	admlimit= {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "admlimit_container"
+		visible = {
+            always=yes
+		}
+
+
+	}
+    
+}
+

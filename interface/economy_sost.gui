@@ -1,0 +1,33 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "econ_inf_container"
+		position = { x= -15 y= 275 }
+		size = { width = 440 height = 116 }
+		
+		iconType = {
+			name = "econ_gdp_icon"
+			position = { x = 35 y = 40 }
+			spriteType = "GFX_ecgdp"
+		}
+		
+		iconType ={
+			name ="econ_gdp_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=64 y=41 }
+		}
+		
+		instantTextboxType = {
+			name = "econ_gdp_text"
+			position = { x = 64 y = 44 }
+			font = "hoi_18mbs"
+			text = "ECON_GDP_MAIN"
+			maxWidth = 100
+			maxHeight = 15
+			format = center
+			pdx_tooltip = "gdp_diplo_num_tt"
+		}
+		
+
+	}
+}

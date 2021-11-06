@@ -1,0 +1,25 @@
+
+state={
+	id=859
+	name="STATE_859"
+	resources={
+      grain = 2 
+fishr = 2
+	}
+	history={
+		owner = MNT
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+
+	}
+
+	provinces={
+		9821 
+	}
+	manpower=95500
+	state_category=wasteland
+}

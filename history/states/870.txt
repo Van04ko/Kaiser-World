@@ -1,0 +1,18 @@
+
+state={
+	id=870
+	name="STATE_870" # Chita
+	manpower = 344310
+	state_category = pastoral
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SOV
+	}
+
+	provinces={
+		4677 7786 1672 10574 10643 12641 1826 10683 
+	}
+}

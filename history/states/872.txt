@@ -1,0 +1,25 @@
+state={
+	id=872
+	name="STATE_872"
+
+	resources={
+      grain = 12 
+fishr = 21
+	}
+	history={
+		add_core_of = PNG
+		owner = AST
+		buildings = {
+			infrastructure = 2
+sklad = 1
+
+		}
+
+	}
+
+	provinces={
+		 10248 10231 7333 7378 7305 10974 4317 7409 4418 12931 12237 10251 7365 12193 5135 12154 7614 4393 12428 12240 12400 10423 11018 11004 1389 
+	}
+	manpower=507000
+	state_category=rural
+}

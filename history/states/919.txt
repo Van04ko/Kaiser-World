@@ -1,0 +1,25 @@
+
+state={
+	id=919
+	name="STATE_919"
+	manpower = 42130
+	
+	resources={
+      grain = 2
+	}
+	state_category = wasteland
+	
+	history={
+		owner = TUR
+		add_core_of = SYR	
+		add_core_of = TUR
+		buildings = {
+			infrastructure =3  
+
+		} 
+	}
+
+	provinces={
+		13269
+	}
+}

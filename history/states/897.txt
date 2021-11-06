@@ -1,0 +1,25 @@
+
+state={
+	id=897
+	name="STATE_897"
+	manpower = 68781
+	
+	resources={
+      grain = 4 
+fishr = 12
+	}
+	state_category = pastoral
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 5
+			sklad = 1
+		}
+		add_core_of = SOV 
+	}
+
+	provinces={
+		  6528 9502 9464 3431 11555 11451 
+	}
+}

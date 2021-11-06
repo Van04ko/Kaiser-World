@@ -1,0 +1,22 @@
+state={
+	id=761
+	name="STATE_761"
+	provinces={
+		1776 4852 7697 10541 10567 12537 13265
+	}
+	manpower=1500000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = JRU
+		add_core_of = JRU
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+}

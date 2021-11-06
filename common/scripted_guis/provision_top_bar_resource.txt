@@ -1,0 +1,15 @@
+scripted_gui = {
+
+	provision = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "provision_container"
+		visible = {
+            always=yes
+		}
+
+
+	}
+    
+}
+

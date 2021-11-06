@@ -1,0 +1,27 @@
+state={
+	id=98
+	name="STATE_98"
+	manpower = 412100
+	
+	resources={
+      grain = 16
+fishr = 12
+	}
+	state_category = rural
+	history={
+		victory_points = {
+			3230 5
+		}
+		owner = GER
+		buildings = {
+			infrastructure = 6
+			sklad = 1
+		}
+		add_core_of = POL
+		add_core_of = GER
+	}
+
+	provinces={
+		548 3230 6259 6401 6567 11385 11274 11329 
+	}
+}

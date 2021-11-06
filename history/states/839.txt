@@ -1,0 +1,26 @@
+
+state={
+	id=839
+	name="STATE_839"
+	manpower = 340000
+	
+	resources={ 
+fishr = 16
+	}
+	state_category = wasteland
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+sklad = 1
+			12702 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = SAU
+	}
+
+	provinces={
+		 1955 12702 10791 4932 
+	}
+}

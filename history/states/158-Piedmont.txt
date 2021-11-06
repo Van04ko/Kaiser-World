@@ -1,0 +1,42 @@
+
+state={
+	id=158
+	name="STATE_158"
+	manpower = 2000476
+	
+	state_category = metropolis
+	resources={
+		steel=24 # was: 40
+		aluminium=16 # was: 28
+		chromium = 4 # was: 4
+		tungsten = 2 # was: 2
+grain = 24
+	}
+
+	history={
+		owner = SAV
+		victory_points = {
+			6780 5 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 8
+		}
+		add_core_of = SAV
+		add_core_of = ITA
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 10
+				industrial_complex = 2
+				dockyard = 3
+			}
+		}
+	}
+
+	provinces={
+		611 770 3782 6780 9738 11570 11721 11723 11730 11891 
+	}
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=809
+	name="STATE_809"
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 7
+
+		}
+		add_core_of = CZE
+		add_core_of = AUS
+	}
+
+	provinces={
+		 5283 543 11525 557 
+	}
+	manpower=800723
+	state_category=pastoral
+}

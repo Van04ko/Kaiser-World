@@ -1,0 +1,25 @@
+
+state={
+	id=912
+	name="STATE_912"
+	manpower = 353130
+	
+	resources={
+      grain = 22
+	}
+	state_category = rural
+	
+	history={
+		owner = GER 
+		buildings = {
+			infrastructure = 4 
+			industrial_complex = 1 
+			sklad = 1
+		}
+		add_core_of = LIT
+	}
+
+	provinces={
+		327 3272 6281  6407 9246 9357 9374 9404 9438 11226 11312 11498 
+	}
+}

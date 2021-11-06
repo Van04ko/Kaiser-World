@@ -1,0 +1,26 @@
+
+state={
+	id=881
+	name="STATE_881" # Gomel
+	manpower = 193422
+	
+	resources={
+      grain = 14
+fishr = 4
+	}
+	state_category = pastoral
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 4
+			sklad = 1
+		}
+		add_core_of = SOV
+		add_core_of = BLR
+	}
+
+	provinces={
+		 6354 11271 6233 9371 9396 9247 289 11230 11383 
+	}
+}

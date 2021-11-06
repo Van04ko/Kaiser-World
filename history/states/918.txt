@@ -1,0 +1,26 @@
+
+state={
+	id=918
+	name="STATE_918"
+	manpower = 1142130
+	
+	resources={
+      grain = 6
+	}
+	state_category = wasteland
+	
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 7 
+
+		} 
+	}
+
+	provinces={
+		783 6806 3944 9897 973 9766 944 6964 11893 10376 
+	}
+}

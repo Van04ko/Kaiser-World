@@ -1,0 +1,8 @@
+ger_prot_decisions = {
+	#icon = infiltration
+ 
+
+	allowed = {
+	always = yes
+	}
+}

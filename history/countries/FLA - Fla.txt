@@ -1,0 +1,25 @@
+﻿
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+add_ideas = {
+BEL_chemical_posledst 
+}
+
+set_politics = {
+	ruling_party = neutrality 
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+set_popularities = {	democratic = 10	communism = 10	neutrality = 60
+}
+
+
+
+
+

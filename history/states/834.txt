@@ -1,0 +1,23 @@
+state={
+	id=834
+	name="STATE_834"
+
+	resources={
+      grain = 4 
+fishr = 2
+	}
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = AZR
+
+	}
+
+	provinces={
+		9715 
+	}
+	manpower=81049
+	state_category=wasteland
+}

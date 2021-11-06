@@ -1,0 +1,22 @@
+
+state={
+	id=807
+	name="STATE_807"
+
+	history={
+		owner = GER
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		521 11516 
+	}
+	manpower=300723
+	state_category=pastoral
+}

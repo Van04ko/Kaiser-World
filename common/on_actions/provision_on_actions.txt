@@ -1,0 +1,343 @@
+on_actions = {
+
+    on_daily = {
+effect = {
+every_country = {
+if = {
+limit = { check_variable= { doprov = 0 } } 
+set_variable = { doprov = 1}
+} } } }
+
+
+    on_startup = {
+effect = {
+every_country = {
+set_variable = { doprov = 1}
+set_variable = { dopfish = 1}
+set_variable = { maxhran  = 50} 
+} } }
+ 
+
+   on_startup = {
+effect = {
+every_country = {
+if = {
+limit = {
+OR={
+tag = INC
+tag = NAE
+tag = INB
+tag = INA
+tag = PNK
+tag = LRD
+tag = GIL
+tag = CMO
+tag = CMD
+tag = CUP
+tag = INI
+}
+}
+set_variable = { doprov = 1.2}
+}
+} 
+}
+}
+
+   on_startup = {
+effect = {
+every_country = {
+if = {
+limit = {
+
+OR={
+tag = CMD
+tag = GIL
+tag = CUP
+tag = LRD
+}
+}
+				add_to_variable = { var = doprov value = 0.2 }
+}
+}
+}
+}
+   on_startup = {
+effect = {
+every_country = {
+if = {
+limit = {
+tag = INI
+}
+				add_to_variable = { var = doprov value = 0.6 }
+}
+}
+}
+}
+
+
+##Механика ивентов
+
+on_monthly = {
+
+	effect = {
+				set_variable = { provcheck = num_of_controlled_states }
+                                multiply_variable = { var = provcheck value = -25 }
+				set_variable = { provcheck2 = provcheck }
+                                multiply_variable = { var = provcheck2 value = 2 }
+				set_variable = { provcheck3 = provcheck2 }
+                                multiply_variable = { var = provcheck3 value = 2 }
+}}
+
+on_monthly = {
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = famine0
+check_variable= {dx < provcheck  } 
+}
+} 
+add_ideas = famine1
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = famine1
+check_variable= {dx > provcheck  } 
+}
+} 
+add_ideas = famine0
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = famine1
+check_variable= {dx < provcheck2  } 
+}
+} 
+add_ideas = famine2
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = famine2
+check_variable= {dx > provcheck2  } 
+}
+} 
+add_ideas = famine1
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = famine2
+check_variable= {dx < provcheck3  } 
+}
+} 
+add_ideas = famine3
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = famine3
+check_variable= {dx > provcheck3  } 
+}
+} 
+add_ideas = famine2
+}
+}
+}
+
+##############################
+
+
+    on_daily = {
+
+
+		effect = {
+				clear_variable = resourceincome
+				clear_variable = allexpensesp
+				clear_variable =  nmn
+
+				#set_variable = { nmn = 0}
+				#divide_variable = { var = nmn value = 10 }
+
+
+				set_variable = { ncmap = max_manpower_k }
+				divide_variable = { var = ncmap value = 72000 }
+
+				set_variable = { nc = num_of_controlled_states }
+				divide_variable = { var = nc value = 33 }
+				set_variable = { fleetp = num_ships}
+				divide_variable = { var = fleetp value = 132 }
+				set_variable = { plainp = num_deployed_planes}
+				divide_variable = { var = plainp value = 1320 }
+				set_variable = { no = num_occupied_states }
+				divide_variable = { var = no value = 20 }
+				set_variable = { ms = num_divisions} 
+				divide_variable = { var = ms value = 50  }
+				set_variable = { grain_prodused = resource_produced@grain}
+				divide_variable = { var = grain_prodused value = 75 }
+                                multiply_variable = { var = grain_prodused value = doprov }
+				set_variable = { tungsten_export = num_of_naval_factories}
+				divide_variable = { var = tungsten_export value = 15 }
+
+				set_variable = { grain_import = resource_imported@grain}
+				divide_variable = { var = grain_import value = 75 }
+                                multiply_variable = { var = grain_import  value = doprov }
+				set_variable = { grain_export = resource_exported@grain}
+				divide_variable = { var = grain_export value = 75 }
+
+				set_variable ={resourceincome = 0 }
+				set_variable ={allexpensesp = 0 }
+
+################################
+				if={
+				limit={
+				has_idea = government1 
+				}
+                                multiply_variable = { var = ncmap value = 0.75 }
+                                multiply_variable = { var = plainp  value = 0.75 }
+                                multiply_variable = { var = fleetp  value = 0.75 }
+                                multiply_variable = { var = no value = 0.75 }
+                                multiply_variable = { var = ms value = 0.75 }
+				}
+
+				if={
+				limit={
+				has_idea = government2 
+				}
+                                multiply_variable = { var = ncmap value = 0.9 }
+                                multiply_variable = { var = plainp  value = 0.9 }
+                                multiply_variable = { var = fleetp  value = 0.9 }
+                                multiply_variable = { var = no value = 0.9 }
+                                multiply_variable = { var = ms value = 0.9 }
+				}
+
+				if={
+				limit={
+				has_idea = government4 
+				}
+                                multiply_variable = { var = ncmap value = 1.1 }
+                                multiply_variable = { var = plainp  value = 1.1 }
+                                multiply_variable = { var = fleetp  value = 1.1 }
+                                multiply_variable = { var = no value = 1.1 }
+                                multiply_variable = { var = ms value = 1.1 }
+				}
+
+				if={
+				limit={
+				has_idea = government5 
+				}
+                                multiply_variable = { var = ncmap value = 1.25 }
+                                multiply_variable = { var = plainp  value = 1.25 }
+                                multiply_variable = { var = fleetp  value = 1.25 }
+                                multiply_variable = { var = no value = 1.25 }
+                                multiply_variable = { var = ms value = 1.25 }
+				}
+
+				if={
+				limit={
+				has_idea = government6 
+				}
+                                multiply_variable = { var = ncmap value = 1.5 }
+                                multiply_variable = { var = plainp  value = 1.5 }
+                                multiply_variable = { var = fleetp  value = 1.5 }
+                                multiply_variable = { var = no  value = 1.5 }
+                                multiply_variable = { var = ms  value = 1.5 }
+				}
+
+				if={
+				limit={
+				has_idea = government7 
+				}
+                                multiply_variable = { var = ncmap value = 2 }
+                                multiply_variable = { var = plainp  value = 2 }
+                                multiply_variable = { var = fleetp  value = 2 }
+                                multiply_variable = { var = no  value = 2 }
+                                multiply_variable = { var =  value = 2 }
+				}
+###################################
+
+				if={
+				limit={
+				has_idea = pisha0
+				}
+                                multiply_variable = { var = no value = 2 }
+                                multiply_variable = { var = ncmap value = 2 }
+                                multiply_variable = { var = ms value = 2 }
+                                multiply_variable = { var = fleetp value = 2 }
+                                multiply_variable = { var = plainp value = 2 }
+				}
+				if={
+				limit={
+				has_idea = pisha2
+				}
+                                divide_variable = { var = no value = 2 }
+                                divide_variable = { var = ncmap value = 2 }
+                                divide_variable = { var = ms value = 2 }
+                                divide_variable = { var = fleetp value = 2 }
+                                divide_variable = { var = plainp value = 2 }
+				}
+				if={
+				limit={
+				has_idea = pisha3
+				}
+                                divide_variable = { var = no value = 4 }
+                                divide_variable = { var = ncmap value = 4 }
+                                divide_variable = { var = ms value = 4 }
+                                divide_variable = { var = fleetp value = 4 }
+                                divide_variable = { var = plainp value = 4 }
+				}
+
+				add_to_variable = { var = resourceincome value = grain_prodused}
+				add_to_variable = { var = resourceincome value = tungsten_export}
+				add_to_variable = { var = resourceincome value = grain_import}
+				add_to_variable = { var = allexpensesp value = grain_export}
+
+				add_to_variable = { var = allexpensesp value = no}	
+				add_to_variable = { var = allexpensesp value = ncmap}
+				add_to_variable = { var = allexpensesp value = ms}
+				add_to_variable = { var = nmn value = resourceincome }
+				add_to_variable = { var = allexpensesp value = fleetp}	
+				add_to_variable = { var = allexpensesp value = plainp}	
+
+
+				set_variable = { var = maxdx value = 0 }
+every_owned_state = {
+set_temp_variable = { var = colich_test value = building_level@sklad }
+THIS = { owner = { add_to_variable = { var = maxdx value = colich_test } } }
+}
+multiply_variable = { var = maxdx value = maxhran  }
+				if = { limit = { check_variable = {dx > maxdx  } }
+set_variable = { var = dx value = maxdx }
+}
+
+				subtract_from_variable = { var = nmn value = allexpensesp }
+				set_variable ={overcome= nmn}
+
+            	add_to_variable = { var = dx value = nmn  }
+            	if={
+            	limit={
+            	OR={
+            	check_variable={nmn>1}
+            	check_variable={nmn<-1}
+            	}
+            	}
+            	#round_variable = dx
+            	}
+            	
+
+
+        }
+    }
+    }

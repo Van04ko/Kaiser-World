@@ -1,0 +1,25 @@
+scripted_gui = {
+
+	bloody = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "bloody_container"
+		visible = {
+            always=yes
+		}
+
+
+	}
+	divlim = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "dvilim_container"
+		visible = {
+            always=yes
+		}
+
+
+	}
+    
+}
+

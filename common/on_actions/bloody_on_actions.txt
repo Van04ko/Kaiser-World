@@ -1,0 +1,616 @@
+on_actions = {
+
+on_startup = {
+effect = {
+every_country = {
+set_variable = { bld = 0 }
+}
+}
+}
+
+
+on_monthly = {
+effect = {
+
+set_variable = { bldexplus = 1 }
+
+if = { limit = { 
+has_idea = civilian_economy 
+} 
+                                add_to_variable = { var = bldexplus value = -0.3 }
+}
+if = { limit = { 
+has_idea = low_economic_mobilisation 
+} 
+                                add_to_variable = { var = bldexplus value = -0.2 }
+}
+if = { limit = { 
+has_idea = partial_economic_mobilisation 
+} 
+                                add_to_variable = { var = bldexplus value = -0.1 }
+}
+if = { limit = { 
+has_idea = war_economy 
+} 
+                                add_to_variable = { var = bldexplus value = 0.1 }
+}
+if = { limit = { 
+has_idea = tot_economic_mobilisation 
+} 
+                                add_to_variable = { var = bldexplus value = 0.2 }
+}
+if = { limit = { 
+has_idea = new_mobilization2 
+} 
+                                add_to_variable = { var = bldexplus value = 0.3 }
+}
+
+
+
+if = { limit = { 
+has_idea = economy_lowrate 
+} 
+                                add_to_variable = { var = bldexplus value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = economy_lowrate2 
+} 
+                                add_to_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea = economy_highrate 
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea = economy_veryhighrate 
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.25 }
+}
+
+
+if = { limit = { 
+has_idea = low_obrazovanie 
+} 
+                                add_to_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea =  high_obrazovanie 
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea = very_high_obrazovanie
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = low_medecina 
+} 
+                                add_to_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea =   high_medecina
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea =  very_high_medecina
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = low_nalogi 
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = very_high_nalogi 
+} 
+                                add_to_variable = { var = bldexplus value = 1 }
+}
+
+if = { limit = { 
+has_idea = high_nalogi 
+} 
+                                add_to_variable = { var = bldexplus value = 0.5 }
+}
+
+if = { limit = { 
+has_idea = famine1 
+} 
+                                add_to_variable = { var = bldexplus value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = famine2 
+} 
+                                add_to_variable = { var = bldexplus value = 0.5 }
+}
+
+if = { limit = { 
+has_idea = famine3 
+} 
+                                add_to_variable = { var = bldexplus value = 1 }
+}
+
+if = { limit = { 
+has_idea = inflaation4 
+} 
+                                add_to_variable = { var = bldexplus value = 0.3 }
+}
+
+if = { limit = { 
+has_idea = inflaation3 
+} 
+                                add_to_variable = { var = bldexplus value = 0.2 }
+}
+
+if = { limit = { 
+has_idea = inflaation2 
+} 
+                                add_to_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea = inflaation0 
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea = pisha0
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea = pisha2 
+} 
+                                add_to_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea = pisha3 
+} 
+                                add_to_variable = { var = bldexplus value = 0.25 }
+}
+
+
+if = { limit = { 
+has_idea = government1 
+} 
+                                add_to_variable = { var = bldexplus value = 1 }
+}
+
+if = { limit = { 
+has_idea = crisis1 
+} 
+                                add_to_variable = { var = bldexplus value = 0.1 }
+}
+if = { limit = { 
+has_idea = crisis2 
+} 
+                                add_to_variable = { var = bldexplus value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = crisis3 
+} 
+                                add_to_variable = { var = bldexplus value = 0.5 }
+}
+
+if = { limit = { 
+has_idea = government2 
+} 
+                                add_to_variable = { var = bldexplus value = 0.5 }
+}
+
+if = { limit = { 
+has_idea = government4 
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.1 }
+}
+
+if = { limit = { 
+has_idea = government5 
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = government6 
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.5 }
+}
+
+if = { limit = { 
+has_idea = government7 
+} 
+                                subtract_from_variable = { var = bldexplus value = 0.75 }
+}
+
+if = { limit = { check_variable= { bldexplus > 2.5 } }
+set_variable = { bldexplus = 2.5 }
+}
+
+if = { limit = { check_variable= { bldexplus < 0.5 } }
+set_variable = { bldexplus = 0.5 }
+}
+##############################
+set_variable = { bldexmin = 0.5 }
+
+
+if = { limit = { 
+has_idea = civilian_economy 
+} 
+                                add_to_variable = { var = bldexmin value = 0.15 }
+}
+if = { limit = { 
+has_idea = low_economic_mobilisation 
+} 
+                                add_to_variable = { var = bldexmin value = 0.1 }
+}
+if = { limit = { 
+has_idea = partial_economic_mobilisation 
+} 
+                                add_to_variable = { var = bldexmin value = 0.05 }
+}
+if = { limit = { 
+has_idea = war_economy 
+} 
+                                add_to_variable = { var = bldexmin value = -0.05 }
+}
+if = { limit = { 
+has_idea = tot_economic_mobilisation 
+} 
+                                add_to_variable = { var = bldexmin value = -0.1 }
+}
+if = { limit = { 
+has_idea = new_mobilization2 
+} 
+                                add_to_variable = { var = bldexmin value = -0.15 }
+}
+
+if = { limit = { 
+has_idea = economy_lowrate 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.125 }
+}
+
+if = { limit = { 
+has_idea = economy_lowrate2 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea = economy_highrate 
+} 
+                                add_to_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea = economy_veryhighrate 
+} 
+                                add_to_variable = { var = bldexmin value = 0.125 }
+}
+
+
+if = { limit = { 
+has_idea = low_obrazovanie 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea =  high_obrazovanie 
+} 
+                                add_to_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea = very_high_obrazovanie
+} 
+                                add_to_variable = { var = bldexmin value = 0.125 }
+}
+
+if = { limit = { 
+has_idea = low_medecina 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea =  high_medecina
+} 
+                                add_to_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea =  very_high_medecina
+} 
+                                add_to_variable = { var = bldexmin value = 0.125 }
+}
+
+if = { limit = { 
+has_idea = low_nalogi 
+} 
+                                add_to_variable = { var = bldexmin value = 0.125 }
+}
+
+if = { limit = { 
+has_idea = very_high_nalogi 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.5 }
+}
+
+if = { limit = { 
+has_idea = high_nalogi 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = famine1 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.125 }
+}
+
+if = { limit = { 
+has_idea = famine2 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = famine3 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.5 }
+}
+
+if = { limit = { 
+has_idea = inflaation4 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.15 }
+}
+
+if = { limit = { 
+has_idea = inflaation3 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.1 }
+}
+
+if = { limit = { 
+has_idea = inflaation2 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea = inflaation0 
+} 
+                                add_to_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea = pisha0
+} 
+                                add_to_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea = pisha2 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea = pisha3 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.125 }
+}
+
+
+if = { limit = { 
+has_idea = government1 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.5 }
+}
+
+if = { limit = { 
+has_idea = crisis1 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.05 }
+}
+if = { limit = { 
+has_idea = crisis2 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.125 }
+}
+
+if = { limit = { 
+has_idea = crisis3 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = government2 
+} 
+                                subtract_from_variable = { var = bldexmin value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = government4 
+} 
+                                add_to_variable = { var = bldexmin value = 0.05 }
+}
+
+if = { limit = { 
+has_idea = government5 
+} 
+                                add_to_variable = { var = bldexmin value = 0.125 }
+}
+
+if = { limit = { 
+has_idea = government6 
+} 
+                                add_to_variable = { var = bldexmin value = 0.25 }
+}
+
+if = { limit = { 
+has_idea = government7 
+} 
+                                add_to_variable = { var = bldexmin value = 0.375 }
+}
+
+if = { limit = { check_variable= { bldexmin > 2 } }
+set_variable = { bldexmin = 2 }
+}
+
+if = { limit = { check_variable= { bldexmin < 0.25 } }
+set_variable = { bldexmin = 0.25 }
+}
+##############################
+
+if = { limit = { 
+AND = {
+check_variable= { bld < 100 }
+ROOT = { has_war = yes } 
+}
+} 
+				add_to_variable = { var = bld value = bldexplus }
+}
+
+if = { limit = { 
+AND = {
+ROOT = {has_war = no } 
+check_variable= { bld > 0 }
+}
+}
+				subtract_from_variable = { var = bld value = bldexmin }
+}
+
+
+
+if = { limit = { check_variable= { bld < 0 } }
+set_variable = { bld = 0 }
+}
+
+if = { limit = { check_variable= { bld > 100 } }
+set_variable = { bld = 100 }
+}
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea0 
+check_variable= { bld > 10} 
+}
+} 
+add_ideas = bloody_idea1 
+}
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea1 
+check_variable= { bld < 10} 
+}
+} 
+add_ideas = bloody_idea0 
+}
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea1 
+check_variable= { bld > 30} 
+}
+} 
+add_ideas = bloody_idea2 
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea2 
+check_variable= { bld < 30} 
+}
+} 
+add_ideas = bloody_idea1 
+}
+}
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea2 
+check_variable= { bld > 50} 
+}
+} 
+add_ideas = bloody_idea3 
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea3 
+check_variable= { bld < 50} 
+}
+} 
+add_ideas = bloody_idea2 
+}
+}
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea3 
+check_variable= { bld > 70} 
+}
+} 
+add_ideas = bloody_idea4 
+}
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea4 
+check_variable= { bld < 70} 
+}
+} 
+
+	set_rule = {
+		can_not_declare_war = no
+	}
+add_ideas = bloody_idea3 
+}
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea4 
+check_variable= { bld > 90} 
+}
+} 
+add_ideas = bloody_idea5 
+}
+
+if = { limit = {
+AND = {
+has_idea = bloody_idea5 
+check_variable= { bld < 90} 
+}
+} 
+add_ideas = bloody_idea4 
+}
+
+##############################################
+
+}
+
+
+}
+
+}

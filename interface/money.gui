@@ -1,0 +1,124 @@
+guiTypes = {
+containerWindowType = {
+		name = "money_equipment_container"
+		position = {x=480 y=100}
+		size = { width=1108 height=720 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_browser_bg"
+		}
+
+		instantTextboxType = {
+			name = "money_headline"
+			position = {x=19 y=15}
+			font = "hoi_36header"
+			text = "Purchase Options"
+			maxWidth = 500
+			maxHeight = 23
+			format = left
+		}
+		
+		iconType = {
+			name = "text_back" 
+			position = {x=29 y=64}	
+			spriteType = "GFX_generic_bg_307x113"
+		}
+
+	}
+	containerWindowType = {
+		name = "money_container"
+		position = { x = 246 y = 35 } #990
+		iconType ={
+			name ="money_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="money_icon"
+			spriteType = "GFX_money"
+			position = { x= 0 y = 3 }
+		}
+
+		instantTextBoxType = {
+			name ="money_text"
+			position = { x= 3 y = 3 }
+			font = "hoi_18mbs"
+			text = "MONEY_MAIN"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "MONEY_TOOLTIP" 
+		}
+	}
+	
+	containerWindowType = {
+		name = "admlimit_container"
+		position = { x = 526 y = 35 } #990
+		iconType ={
+			name ="money_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="Bureaucrats_mini_icon"
+			spriteType = "GFX_Bureaucrats_mini"
+			position = { x= -4 y = -4 }
+		}
+		iconType = {
+			name ="plus_icon"
+			spriteType = "GFX_plus_icon"
+			position = { x= 95 y = -7 }
+		}
+
+		instantTextBoxType = {
+			name ="money_text"
+			position = { x= 15 y = 3 }
+			font = "hoi_18mbs"
+			text = "ADMINLIM_MAIN"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "ADMINLIM_TOOLTIP" 
+		}
+	}
+		containerWindowType = {
+		name = "inflation_container"
+		position = { x = 100 y = 35 } #990
+		iconType ={
+			name ="inflation_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="inflation_icon"
+			spriteType = "GFX_inflation"
+			position = { x= 0 y = 3 }
+		}
+
+		instantTextBoxType = {
+			name ="inflation_text"
+			position = { x= 15 y = 3 }
+			font = "hoi_18mbs"
+			text = "INFLATION_MAIN"
+			format = center
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "INFLATION_TOOLTIP" 
+		}
+	}
+
+}

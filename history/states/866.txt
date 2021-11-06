@@ -1,0 +1,23 @@
+
+state={
+	id=866
+	name="STATE_866" # Nevel
+	manpower = 130133
+	
+	resources={
+      grain = 20
+	}
+	state_category = pastoral
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SOV
+	}
+
+	provinces={
+		3333 11259 3310 387 9353 6242 9386 
+	}
+}

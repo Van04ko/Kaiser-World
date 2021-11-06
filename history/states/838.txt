@@ -1,0 +1,23 @@
+state={
+	id=838
+	name="STATE_838"
+	manpower = 30000
+	
+	resources={
+      grain = 1 
+fishr = 2
+	}
+	state_category = pastoral
+	
+	history={
+		add_core_of = KUW
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	provinces={
+		13237
+	}
+}

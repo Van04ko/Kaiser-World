@@ -1,0 +1,33 @@
+
+state={
+	id=861
+	name="STATE_861"
+	manpower =210200
+	
+	resources={
+      grain = 6 
+fishr = 2
+	}
+	
+	state_category = pastoral
+	
+
+	history={
+		owner = YUG
+		victory_points = {
+			11899 5 
+		}
+		victory_points = {
+			6983 3
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+	}
+
+	provinces={
+		 6614 6619 9586 
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id=833
+	name="STATE_833"
+
+	resources={
+      grain = 8  
+	}
+	history={
+		owner = SOV
+		victory_points = {
+			11674 1 
+		}
+		buildings = {
+			infrastructure = 3
+sklad = 1
+		}
+		add_core_of = SOV
+		add_core_of = AZR
+
+	}
+
+	provinces={
+		 6763 11645 11674 1539 
+	}
+	manpower=881049
+	state_category=rural
+}

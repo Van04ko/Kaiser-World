@@ -1,0 +1,13 @@
+on_actions = {
+on_startup = {
+effect = {
+
+every_country = {
+
+				set_variable = { schastie1 = 50}
+}
+GER = { set_variable = { schastie1 = 30} }
+}}
+
+##############################
+}

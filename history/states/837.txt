@@ -1,0 +1,20 @@
+
+state={
+	id=837
+	name="STATE_837"
+	manpower = 69000
+	
+	state_category = wasteland
+	
+	history={
+		owner = OMA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = OMA
+	}
+
+	provinces={
+		 2059 2018 5049 
+	}
+}

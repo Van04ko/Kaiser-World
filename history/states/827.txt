@@ -1,0 +1,21 @@
+
+state={
+	id=827
+	name="STATE_827"
+	manpower = 1000476
+	
+	state_category = pastoral
+
+	history={
+		owner = MFT
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = ITA
+		add_core_of = MFT
+	}
+
+	provinces={
+		11726 9741 771 13242 
+	}
+}

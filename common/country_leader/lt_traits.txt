@@ -1,0 +1,218 @@
+leader_traits = {
+		medic_concern = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		econ_concern = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+good_at_diplomacy = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		opinion_gain_monthly_factor = 0.15
+		trade_opinion_factor = 0.5
+
+}
+		ign_min_led = {
+		random = no 
+		political_power_factor = -0.1
+		army_org_Factor = 0.1
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+conscription_factor = 0.03
+		experience_gain_army_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		instran1 = {
+		random = no
+		political_power_factor = -0.05
+		justify_war_goal_time = -0.15
+			generate_wargoal_tension = -0.1	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		instran2 = {
+		random = no
+		political_power_factor = 0.05
+		justify_war_goal_time = 0.15
+			generate_wargoal_tension = 0.1	
+		opinion_gain_monthly_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		great_war_veteran_defence = {
+		random = no
+		political_power_factor = 0.15
+		war_support_factor = 0.1
+		max_dig_in_factor = 0.1
+		dig_in_speed_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		wilhelm_and_only_he= {
+		random = no
+		political_power_factor = 0.15
+		war_support_factor = 0.03
+		stability_factor = 0.03
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		mil_foc = {
+		random = no 
+		war_support_factor = 0.05
+		ai_focus_aggressive_factor = 0.5 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		the_messiah = {
+		random = no
+		political_power_factor = 0.05
+		justify_war_goal_time = -0.15
+		conscription_factor = 0.05	
+			generate_wargoal_tension = -0.1		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		the_dictatoro = {
+		random = no
+		political_power_factor = 0.05
+		justify_war_goal_time = -0.15
+			generate_wargoal_tension = -0.2	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		military_hunta = {
+		random = no
+		political_power_factor = -0.15
+		war_support_factor = 0.1
+		stability_factor = -0.1
+		conscription = 0.005
+		justify_war_goal_time = -0.25
+			generate_wargoal_tension = -0.2	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		popular_autocrat = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+}
+		old_monarch = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+}
+		old_monarch2 = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.05
+			generate_wargoal_tension = 0.25	
+		justify_war_goal_time = 0.25
+				production_speed_arms_factory_factor = -0.25
+		ai_will_do = {
+			factor = 1
+		}
+}
+		futher_of_nords = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.1
+		war_support_factor = 0.1
+			generate_wargoal_tension = -0.1	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		mastry_doctor = {
+		random = no
+		MONTHLY_POPULATION = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tank_manufacturer_fix = {
+		random = no
+		#generic
+
+		equipment_bonus = {
+			armor = {
+				reliability = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		mastry_propagandist = {
+		random = no
+		non_core_manpower = 0.03
+		conscription_factor = 0.03
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		autoritan_politic = {
+		random = no
+		paternal_autocrat_drift = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		expireinsed_buisnesman = {
+		random = no
+		political_power_factor = 0.05
+		trade_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		carefuly_tecnocrat = {
+		random = no
+		
+		political_power_factor = 0.1
+		stability_factor = 0.05
+		industrial_capacity_factory = 0.05
+		justify_war_goal_time = 0.25
+			generate_wargoal_tension = 0.25	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	captain_of_industry_it = {
+		sprite = 10
+		random = yes
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_sklad_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=12
+	name="STATE_12"
+	manpower = 120500
+	resources={ 
+grain = 4
+fishr = 6
+	}
+	
+	state_category = city
+	
+	history={
+		owner = LIV
+		victory_points = {
+			9340 5 
+		} 
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 3
+			sklad = 2
+			9340 = {
+				naval_base = 3
+			} 
+		}
+		add_core_of = LAT
+		add_core_of = LIV
+	}
+
+	provinces={
+		 9340 
+	}
+}

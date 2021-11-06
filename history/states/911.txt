@@ -1,0 +1,30 @@
+
+state={
+	id=911
+	name="STATE_911"
+	manpower = 420500
+	resources={
+		steel=2
+grain = 32
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = GER 
+		buildings = {
+			infrastructure = 4 
+			industrial_complex = 1
+			air_base = 3 
+			sklad = 1
+			310 = {
+				bunker = 2
+			}
+		}
+		add_core_of = LAT
+	}
+
+	provinces={
+		3255 3298 3388 9240 9317  9501 10323 10493 11222 11302 11358 
+	}
+}

@@ -1,0 +1,22 @@
+state={
+	id=890
+	name="STATE_890" 
+
+	resources={
+      grain = 2
+	}
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SOV  
+	}
+
+	provinces={
+		 666 1455 
+	}
+	manpower=23970 
+	state_category=wasteland
+}

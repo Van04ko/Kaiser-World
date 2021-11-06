@@ -1,0 +1,20 @@
+
+state={
+	id=818
+	name="STATE_818"
+	manpower = 370800
+	
+	state_category = pastoral
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		11606 13247
+	}
+}

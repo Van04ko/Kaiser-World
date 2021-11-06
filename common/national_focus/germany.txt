@@ -1,0 +1,371 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = german_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	continuous_focus_position = { x = 1700 y = 0 }
+	
+	default = no
+ 
+
+	focus = {
+		id = GER_russian_cooperation
+		icon = GFX_focus_GER_Peace_with_Russia
+		x = 7
+		y = 1
+		cost = 0.75
+		ai_will_do = {
+			factor = 12
+		} 
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			GER = { country_event = {days = 2 id = KRRger.1 } } 
+			swap_ideas = { 
+				remove_idea = GER_war_never_changes  
+				add_idea = GER_war_never_changes2 
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = GER_entetne_peace
+		icon = GFX_focus_GER_Peace_with_Entente
+		relative_position_id = GER_russian_cooperation
+		x = 2
+		y = 0
+		cost = 0.75
+		ai_will_do = {
+			factor = 12
+		} 
+		prerequisite = {
+			
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			GER = { country_event = {days = 2 id = KRRger.2 } } 
+			remove_ideas = GER_war_never_changes2 
+			remove_ideas = GER_zatishie 
+		}
+		
+	}
+	focus = {
+		id = GER_heil_kaiser_dir
+		icon = GFX_focus_GER_heil_kaiser_dir
+		relative_position_id = GER_russian_cooperation
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		} 
+		prerequisite = { focus = GER_entetne_peace }
+		prerequisite = { focus = GER_russian_cooperation }
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = GER_paris_conference
+		icon = GFX_focus_GER_Paris_conference
+		relative_position_id = GER_russian_cooperation
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		} 
+		prerequisite = {
+			focus = GER_heil_kaiser_dir
+		}
+		completion_reward = {
+			 
+		}
+		
+	}
+	focus = {
+		id = GER_goverment_obs
+		icon = GFX_focus_GER_consequences_gas_attacks
+		relative_position_id = GER_russian_cooperation
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		prerequisite = { focus = GER_economics_reform }
+		prerequisite = { focus = GER_focus_AST_war_japan }
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = GER_cd_diplo
+		icon = GFX_focus_GER_colonies
+		relative_position_id = GER_russian_cooperation
+		x = 3
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 12
+		} 
+		prerequisite = {
+			focus = GER_heil_kaiser_dir
+		}
+		completion_reward = {
+			 
+custom_effect_tooltip = ger_marionette
+hidden_effect = {
+CRI= { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = CRI
+}
+}
+}
+BOT= { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BOT
+}
+}
+}
+SGA= { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = SGA
+}
+}
+}
+TZG= { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = TZG
+}
+}
+}
+MAF= { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = MAF
+}
+}
+}
+BLR= { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BLR
+}
+}
+}
+UKR = { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = UKR
+}
+}
+}
+BEL = { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BEL
+}
+}
+}
+LIV = { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = LIV
+}
+}
+}
+POL = { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = POL
+}
+}
+}
+LIT = { 
+load_oob = GER_militia
+random_owned_state = {
+create_unit = {
+    division = "name = \"Militia Squads\" division_template = \"Militia Squads\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = LIT
+}
+}
+}
+}
+every_country = { limit = { OR = {
+tag = POL
+tag = LIT
+tag = LIV
+tag = BEL
+tag = UKR
+tag = BLR
+tag = MAF
+tag= TZG
+tag = SGA
+tag = BOT
+tag = CRI
+}
+}
+ add_stability = 0.01
+}
+		}
+		
+	}
+
+	focus = {
+		id = GER_focus_AST_war_japan
+		icon = GFX_focus_GER_demobilization
+		relative_position_id = GER_russian_cooperation
+		x = 1
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 12
+		} 
+		prerequisite = {
+			focus = GER_paris_conference
+			focus = GER_cd_diplo
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_economics_reform
+		icon = GFX_focus_GER_Warsaw_conference
+		relative_position_id = GER_russian_cooperation
+		x = 4
+		y = 3
+		cost = 1.5
+		ai_will_do = {
+			factor = 12
+		} 
+		prerequisite = {
+			focus = GER_cd_diplo
+		}
+		completion_reward = { 
+   
+every_country = { limit = { OR = {
+tag = POL
+tag = LIT
+tag = LIV
+tag = BEL
+tag = UKR
+tag = BLR
+tag = MAF
+tag= TZG
+tag = SGA
+tag = BOT
+tag = CRI
+}
+}
+ add_ideas = GER_flag_idea
+}
+		}
+		
+	}
+	focus = {
+		id = GER_vosst_nach
+		icon = GFX_focus_GER_japan_contract
+		relative_position_id = GER_russian_cooperation
+		x = -1
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 12
+		} 
+		prerequisite = {
+			focus = GER_morocan_question
+		}
+		prerequisite = {
+			focus = GER_focus_AST_war_japan
+		}
+		completion_reward = {
+			 
+		}
+		
+	}
+	focus = {
+		id = GER_morocan_question
+		relative_position_id = GER_russian_cooperation
+		icon = GFX_focus_GER_diplomatic_mission_Morocco
+		x = -2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		} 
+		prerequisite = {
+			focus = GER_paris_conference
+		}
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = GER_call_reichstag
+		relative_position_id = GER_russian_cooperation
+		icon = GFX_focus_GER_call_reichstag
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		} 
+		prerequisite = {
+			focus = GER_vosst_nach
+		}
+		prerequisite = {
+			focus = GER_goverment_obs
+		}
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	GFX_focus_GER_call_reichstag
+}

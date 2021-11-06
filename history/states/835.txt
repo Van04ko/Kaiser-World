@@ -1,0 +1,25 @@
+state={
+	id=835
+	name="STATE_835"
+	manpower = 311000
+	
+	resources={
+      grain = 4  
+	}
+	state_category = wasteland
+
+	history={
+		owner = SAU
+		victory_points = {
+			12758 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+	}
+
+	provinces={
+		  12758 7934 10748 2090 10786 5006 
+	}
+}

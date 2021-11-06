@@ -1,0 +1,89 @@
+on_actions = {
+    on_daily = {
+		effect = { 
+
+if = {
+limit = { has_idea = government1 } 
+set_variable = { divlim = 5 } 
+} 
+if = {
+limit = { has_idea = government2 } 
+set_variable = { divlim = 15 } 
+} 
+if = {
+limit = { has_idea = government3 } 
+set_variable = { divlim = 30 } 
+} 
+if = {
+limit = { has_idea = government4 } 
+set_variable = { divlim = 50 } 
+} 
+if = {
+limit = { has_idea = government5 } 
+set_variable = { divlim = 100 } 
+} 
+if = {
+limit = { has_idea = government6 } 
+set_variable = { divlim = 175 } 
+} 
+if = {
+limit = { has_idea = government7 } 
+set_variable = { divlim = 250 } 
+} 
+
+if = {
+limit = { has_idea = undisturbed_isolation } 
+multiply_variable = { var = divlim value = 0.25 }
+} 
+if = {
+limit = { has_idea = isolation } 
+multiply_variable = { var = divlim value = 0.5 }
+} 
+if = {
+limit = { has_idea = civilian_economy } 
+multiply_variable = { var = divlim value = 0.75 }
+} 
+if = {
+limit = { has_idea = partial_economic_mobilisation } 
+multiply_variable = { var = divlim value = 1.25 }
+} 
+if = {
+limit = { has_idea = new_mobilization1 } 
+multiply_variable = { var = divlim value = 1.5 }
+} 
+if = {
+limit = { has_idea = war_economy } 
+multiply_variable = { var = divlim value = 2 }
+} 
+if = {
+limit = { has_idea = tot_economic_mobilisation } 
+multiply_variable = { var = divlim value = 3 }
+} 
+
+if = {
+limit = { has_idea = tot_economic_mobilisation } 
+multiply_variable = { var = divlim value = 3 }
+} 
+
+            	round_variable = divlim 
+ 
+				set_variable = { divcol  = num_divisions }
+					if = {
+						limit = {
+							check_variable= { divcol  > divlim  }
+						}
+ 
+						country_lock_all_division_template = yes
+					}
+
+					if = {
+						limit = {
+							check_variable= { divcol  < divlim  }
+						}
+ 
+						country_lock_all_division_template = no
+					}
+
+}
+}
+}

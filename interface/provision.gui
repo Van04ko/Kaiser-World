@@ -1,0 +1,90 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "provision_container"
+		position = { x = 350 y = 35 } #990
+		iconType ={
+			name ="provision_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="provision_icon"
+			spriteType = "GFX_bread"
+			position = { x= 0 y = 4 }
+		}
+
+		instantTextBoxType = {
+			name ="provision_text"
+			position = { x= 3 y = 3 }
+			font = "hoi_18mbs"
+			text = "PROVISION_MAIN"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "PROVISION_TOOLTIP" 
+		}
+	}
+	containerWindowType = {
+		name = "schastie_container"
+		position = { x = 453 y = 35 } #990
+		iconType ={
+			name ="schastie_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="schastie_icon"
+			spriteType = "GFX_schastie"
+			position = { x= 0 y = 4 }
+		}
+
+		instantTextBoxType = {
+			name ="schastie_text"
+			position = { x= 3 y = 3 }
+			font = "hoi_18mbs"
+			text = "SCHASTIE_MAIN"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "SCHASTIE_TOOLTIP" 
+		}
+	}
+	containerWindowType = {
+		name = "dvilim_container"
+		position = { x = 973 y = 5 } #990
+		iconType ={
+			name ="divlim_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="divlim_icon"
+			spriteType = "GFX_shlem"
+			position = { x= 0 y = 4 }
+		}
+
+		instantTextBoxType = {
+			name ="divlim_text"
+			position = { x= 3 y = 3 }
+			font = "hoi_18mbs"
+			text = "DIVLIM_MAIN"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "DIVLIM_TOOLTIP" 
+		}
+	}
+
+}
+
+

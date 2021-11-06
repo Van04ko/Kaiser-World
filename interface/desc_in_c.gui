@@ -1,0 +1,837 @@
+guiTypes = {
+	containerWindowType = {
+		name = "desc_in_c"
+                position = { x = 0 y = 0 }
+		Orientation = UPPER_LEFT
+		
+		buttonType = {
+			name = "desc_in_cy"
+			position = { x = 603 y = 68 }			
+			quadTextureSprite = "GFX_desc_in_c"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+    }
+	
+		containerWindowType = {
+		name = "house"
+		position = { x = 150 y = 100}	
+		
+		size = { width = 1280 height = 720 }
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+        
+		orientation = UPPER_LEFT
+        
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_browser_bg"
+		}
+		buttonType = {
+			name = "desc_in_cy1"
+			position = { x = 60 y = 100 }			
+			quadTextureSprite = "GFX_millitary_parade_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de1_text"
+			position = { x= 60 y = 100 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE1_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy38"
+			position = { x = 420 y = 100 }			
+			quadTextureSprite = "GFX_motor_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de38_text"
+			position = { x= 420 y = 100 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE38_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy11"
+			position = { x = 60 y = 190 }			
+			quadTextureSprite = "GFX_gold_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de11_text"
+			position = { x= 60 y = 190 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE11_TOOLTIP" 
+		}
+
+		buttonType = {
+			name = "desc_in_cy12"
+			position = { x = 120 y = 190 }			
+			quadTextureSprite = "GFX_isuyatie_mon_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de12_text"
+			position = { x= 120 y = 190 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE12_TOOLTIP" 
+		}
+
+		buttonType = {
+			name = "desc_in_cy13"
+			position = { x = 180 y = 190 }			
+			quadTextureSprite = "GFX_cons_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de13_text"
+			position = { x= 180 y = 190 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE13_TOOLTIP" 
+		}
+		
+		buttonType = {
+			name = "desc_in_cy14"
+			position = { x = 240 y = 190 }			
+			quadTextureSprite = "GFX_consb_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de14_text"
+			position = { x= 240 y = 190 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE14_TOOLTIP" 
+		}
+
+		buttonType = {
+			name = "desc_in_cy21"
+			position = { x = 60 y = 280 }			
+			quadTextureSprite = "GFX_politb_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de21_text"
+			position = { x= 60 y = 280 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE21_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy22"
+			position = { x = 120 y = 280 }			
+			quadTextureSprite = "GFX_work_rights_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de22_text"
+			position = { x= 120 y = 280 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE22_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy23"
+			position = { x = 180 y = 280 }			
+			quadTextureSprite = "GFX_social_pr_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de23_text"
+			position = { x= 180 y = 280 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE23_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy24"
+			position = { x = 300 y = 280 }			
+			quadTextureSprite = "GFX_pacif_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de24_text"
+			position = { x= 300 y = 280 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE24_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy25"
+			position = { x = 120 y = 460 }			
+			quadTextureSprite = "GFX_civ_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de25_text"
+			position = { x= 120 y = 460 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE25_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy26"
+			position = { x = 180 y = 460 }			
+			quadTextureSprite = "GFX_mil_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de26_text"
+			position = { x= 180 y = 460 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE26_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy27"
+			position = { x = 240 y = 460 }			
+			quadTextureSprite = "GFX_nav_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de27_text"
+			position = { x= 240 y = 460 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE27_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy28"
+			position = { x = 300 y = 460 }			
+			quadTextureSprite = "GFX_inf_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de28_text"
+			position = { x= 300 y = 460 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE28_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy39"
+			position = { x = 360 y = 460 }			
+			quadTextureSprite = "GFX_farm_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de39_text"
+			position = { x= 360 y = 460 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE39_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy40"
+			position = { x = 420 y = 460 }			
+			quadTextureSprite = "GFX_metal_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de40_text"
+			position = { x= 420 y = 460 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE40_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy29"
+			position = { x = 300 y = 190 }			
+			quadTextureSprite = "GFX_res_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de29_text"
+			position = { x= 300 y = 190 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE29_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy31"
+			position = { x = 360 y = 280 }			
+			quadTextureSprite = "GFX_generic_agriculture_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de31_text"
+			position = { x= 360 y = 280 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE31_TOOLTIP" 
+		}
+				buttonType = {
+			name = "desc_in_cy32"
+			position = { x = 300 y = 190 }			
+			quadTextureSprite = "GFX_nap_mon_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de32_text"
+			position = { x= 300 y = 190 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE32_TOOLTIP" 
+		}
+				buttonType = {
+			name = "desc_in_cy33"
+			position = { x = 360 y = 190 }			
+			quadTextureSprite = "GFX_buy_prov_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de33_text"
+			position = { x= 360 y = 190 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE33_TOOLTIP" 
+		}
+				buttonType = {
+			name = "desc_in_cy34"
+			position = { x = 420 y = 190 }			
+			quadTextureSprite = "GFX_prod_prov_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de34_text"
+			position = { x= 420 y = 190 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE34_TOOLTIP" 
+		}
+		
+		buttonType = {
+			name = "desc_in_cy30"
+			position = { x = 240 y = 280 }			
+			quadTextureSprite = "GFX_prov_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="de30_text"
+			position = { x= 240 y = 280 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE30_TOOLTIP" 
+		}
+		
+		buttonType = {
+			name = "desc_in_cy2"
+			position = { x = 120 y = 100 }			
+			quadTextureSprite = "GFX_voen_prop_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de2_text"
+			position = { x= 120 y = 100 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE2_TOOLTIP" 
+		}
+		
+		buttonType = {
+			name = "desc_in_cy3"
+			position = { x = 180 y = 100 }			
+			quadTextureSprite = "GFX_prepare_civil_war_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de3_text"
+			position = { x= 180 y = 100 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE3_TOOLTIP" 
+		}
+		buttonType = {
+			name = "desc_in_cy4"
+			position = { x = 240 y = 100 }			
+			quadTextureSprite = "GFX_army_support_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de4_text"
+			position = { x= 240 y = 100 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE4_TOOLTIP" 
+		}		
+		
+		buttonType = {
+			name = "desc_in_cy5"
+			position = { x = 300 y = 100 }			
+			quadTextureSprite = "GFX_generic_industry_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de5_text"
+			position = { x= 300 y = 100 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE5_TOOLTIP" 
+		}		
+		buttonType = {
+			name = "desc_in_cy6"
+			position = { x = 360 y = 100 }			
+			quadTextureSprite = "GFX_support_eq_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de6_text"
+			position = { x= 360 y = 100 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE6_TOOLTIP" 
+		}	
+				
+		buttonType = {
+			name = "desc_in_cy7"
+			position = { x = 60 y = 370 }			
+			quadTextureSprite = "GFX_res_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de7_text"
+			position = { x= 60 y = 370 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE7_TOOLTIP" 
+		}	
+		buttonType = {
+			name = "desc_in_cy8"
+			position = { x = 120 y = 370 }			
+			quadTextureSprite = "GFX_res_weap_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de8_text"
+			position = { x= 120 y = 370 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE8_TOOLTIP" 
+		}	
+		buttonType = {
+			name = "desc_in_cy9"
+			position = { x = 180 y = 370 }			
+			quadTextureSprite = "GFX_res_stroy_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de9_text"
+			position = { x= 180 y = 370 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE9_TOOLTIP" 
+		}	
+		buttonType = {
+			name = "desc_in_cy10"
+			position = { x = 240 y = 370 }			
+			quadTextureSprite = "GFX_res_agr_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de10_text"
+			position = { x= 240 y = 370 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE10_TOOLTIP" 
+		}	
+		buttonType = {
+			name = "desc_in_cy35"
+			position = { x = 300 y = 370 }			
+			quadTextureSprite = "GFX_res_med_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de35_text"
+			position = { x= 300 y = 370 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE35_TOOLTIP" 
+		}		
+		buttonType = {
+			name = "desc_in_cy36"
+			position = { x = 360 y = 370 }			
+			quadTextureSprite = "GFX_res_mex_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de36_text"
+			position = { x= 360 y = 370 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE36_TOOLTIP" 
+		}	
+		buttonType = {
+			name = "desc_in_cy37"
+			position = { x = 60 y = 460 }			
+			quadTextureSprite = "GFX_buyciv_des_d"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+		
+		instantTextBoxType = {
+			name ="de37_text"
+			position = { x= 60 y = 460 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center 
+			maxWidth = 40
+			maxHeight = 40
+			fixedsize = yes
+			
+			pdx_tooltip = "DE37_TOOLTIP" 
+		}	
+		
+                instantTextboxType = {
+			name = "title"
+			position = { x = 15 y = 12 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = descisions_tex
+			maxWidth = 320
+			maxHeight = 20
+			format = left	
+		}
+		
+                instantTextboxType = {
+			name = "title1"
+			position = { x = 45 y = 62 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = descisions_tex1
+			maxWidth = 320
+			maxHeight = 20
+			format = left	
+		}
+                 instantTextboxType = {
+			name = "title2"
+			position = { x = 45 y = 152 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = descisions_tex2
+			maxWidth = 320
+			maxHeight = 20
+			format = left	
+		}     
+         instantTextboxType = {
+			name = "title3"
+			position = { x = 45 y = 242 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = descisions_tex3
+			maxWidth = 320
+			maxHeight = 20
+			format = left	
+		}     
+         instantTextboxType = {
+			name = "title4"
+			position = { x = 45 y = 332 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = descisions_tex4
+			maxWidth = 320
+			maxHeight = 20
+			format = left	
+		}   		
+    instantTextboxType = {
+			name = "title5"
+			position = { x = 45 y = 422 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = descisions_tex5 
+			maxWidth = 320
+			maxHeight = 20
+			format = left	
+		}   
+		
+		buttonType = {
+			name = "button_close"
+			position = { x = 510 y = 675 }
+			spriteType = "GFX_sort_button_100x29_2"
+                        frame = 2
+			buttonFont = "hoi_16mbs"
+			buttonText = exit_desc
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			Orientation = "UPPER_LEFT"
+		}
+        
+
+        
+
+    }
+}

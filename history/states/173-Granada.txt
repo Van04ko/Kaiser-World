@@ -1,0 +1,37 @@
+state={
+	id=173
+	name="STATE_173"
+	resources={
+		steel=8.000
+grain = 10
+	}
+
+	history={
+		owner = GRD
+		victory_points = {
+			12038 1 
+		}
+		victory_points = {
+			1176 3
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			air_base = 4
+			12038 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = SPR
+		add_core_of = GRD
+
+	}
+
+	provinces={
+		747 1176 4065 7068 7196 10063 11956 12038 
+	}
+	manpower=1002292
+	state_category=city
+}

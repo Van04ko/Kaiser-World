@@ -1,0 +1,29 @@
+
+state={
+	id=850
+	name="STATE_850" # Muntenia
+	manpower = 861400
+
+	resources={
+      grain = 8 
+fishr = 16
+	}
+	state_category = pastoral
+
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 5
+sklad = 1
+			687 = {
+				naval_base = 1
+			}
+			dockyard = 1
+		}
+		add_core_of = ROM
+	}
+
+	provinces={
+		687 3076 
+	}
+}

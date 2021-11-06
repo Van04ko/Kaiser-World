@@ -1,0 +1,26 @@
+
+state={
+	id=857
+	name="STATE_857"
+
+	resources={
+      grain = 4 
+fishr = 4
+	}
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = GRE
+		add_claim_by = BUL
+
+	}
+
+	provinces={
+		3844 966 
+	}
+	manpower=55700
+	state_category=wasteland
+}

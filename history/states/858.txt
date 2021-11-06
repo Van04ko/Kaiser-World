@@ -1,0 +1,26 @@
+
+state={
+	id=858
+	name="STATE_858"
+
+	resources={
+      grain = 8 
+fishr = 2
+	}
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = GRE
+		add_core_of = BUL
+
+	}
+
+	provinces={
+		 10163 936 3526 6990 
+	}
+	manpower=355700
+	state_category=rural
+}

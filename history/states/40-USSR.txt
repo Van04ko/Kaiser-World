@@ -1,0 +1,29 @@
+
+state={
+	id=40
+	name="STATE_40" # Altai
+	manpower = 2107451
+	
+	resources={
+      grain = 20 
+fishr = 12
+	}
+	state_category = rural
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			sklad = 1
+		}
+		add_core_of = SOV
+		victory_points = {
+			1794 3 
+		}
+	}
+
+	provinces={
+		1297 1779 1794 1797 4803 7680 10537 10546 11410 12515 12528 12613 
+}
+}

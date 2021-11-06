@@ -1,0 +1,22 @@
+
+state={
+	id=810
+	name="STATE_810"
+
+	history={
+		owner = GER
+		victory_points = {
+			3560 1
+		}
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		3560 5291 
+	}
+	manpower=200723
+	state_category=pastoral
+}

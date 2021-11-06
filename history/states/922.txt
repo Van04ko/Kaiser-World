@@ -1,0 +1,29 @@
+
+state={
+	id=922
+	name="STATE_922"
+	manpower = 22130
+	
+	resources={
+      grain = 6
+	}
+	state_category = pastoral
+	
+	history={
+		owner = TUR
+		add_core_of = PAL
+		add_core_of = ISR
+		victory_points = {
+			1065 1 
+		}
+		buildings = {
+			infrastructure = 2  
+			sklad = 1
+
+		} 
+	}
+
+	provinces={
+		1015 7176 1086 7107 1065 1
+	}
+}

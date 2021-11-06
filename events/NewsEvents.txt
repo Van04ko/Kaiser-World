@@ -1,0 +1,62 @@
+﻿add_namespace = news
+
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_sadlenin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.1.c
+		trigger = { TAG = GER }
+	}
+} 
+
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_067
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = ENG
+				TAG = FRA
+			}
+		}
+	}
+	option = {
+		name = news.2.b
+		trigger = {  OR = { 
+TAG = FRA
+TAG = ENG } }
+	}
+	option = {
+		name = news.2.c
+		trigger = { TAG = GER }
+	}
+} 

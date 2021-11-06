@@ -1,0 +1,24 @@
+state=
+{
+	id=876
+	name="STATE_876"
+	manpower = 96800
+	
+	resources={
+      grain = 2 
+fishr = 4
+	}
+	state_category = pastoral
+	
+	history= {
+		add_core_of = MOL
+		owner = MOL
+		buildings = {
+			infrastructure = 3 
+		}
+		add_core_of = ROM
+	}
+	provinces=
+	{ 3407 
+ 	}
+}

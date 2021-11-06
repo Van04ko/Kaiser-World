@@ -1,0 +1,25 @@
+
+state={
+	id=883
+	name="STATE_883"
+	manpower = 495352
+	
+	resources={
+      grain = 4
+fishr = 6
+	}
+	state_category = city
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = SOV
+		add_core_of = UKR
+	}
+
+	provinces={
+		489 11557 582 9543 
+	}
+}

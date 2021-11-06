@@ -1,0 +1,119 @@
+ger_prot_decisions = {
+
+ 
+	peregovorid = {
+
+		icon = encryption_tech_2
+
+		available = {
+ 
+		}
+
+
+		visible = {
+NOT = { check_variable= { global.peregovori_zaversh222 = 1 } }
+GER = { has_completed_focus = GER_entetne_peace }
+			OR = {  
+tag = ENG
+tag = FRA
+}
+		}
+		
+		fire_only_once = no
+days_remove = 30
+		
+		cost = 25
+		
+		complete_effect = {
+ 
+ 
+		}
+		
+		remove_effect = { 
+custom_effect_tooltip = ger_per_2
+if =  { limit = { tag = ENG }
+add_to_variable = { var = global.engvl value = 2}
+}
+if =  { limit = { tag = FRA }
+add_to_variable = { var = global.fravl value = 2}
+}
+}
+		ai_will_do = {
+			factor = 15
+		}
+	}
+
+	peregovori_fra = {
+
+		icon = encryption_tech_2
+
+		available = {
+ 
+NOT = { has_country_flag = ger_peregovarivaet }
+		}
+
+
+		visible = {
+NOT = { check_variable= { global.peregovori_zaversh222 = 1 } }
+GER = { has_completed_focus = GER_entetne_peace } 
+tag = GER 
+		}
+		
+		fire_only_once = no
+days_remove = 20
+		
+		cost = 25
+		
+		complete_effect = {
+set_country_flag = ger_peregovarivaet
+ 
+		}
+		remove_effect = {
+clr_country_flag = ger_peregovarivaet
+custom_effect_tooltip = ger_per_3
+
+add_to_variable = { var = global.gervlfra value = 3}
+}
+		ai_will_do = {
+			factor = 15
+		}
+	}
+	peregovori_eng = {
+
+		icon = encryption_tech_2
+
+		available = {
+ 
+NOT = { has_country_flag = ger_peregovarivaet }
+		}
+
+
+		visible = {
+NOT = { check_variable= { global.peregovori_zaversh222 = 1 } }
+GER = { has_completed_focus = GER_entetne_peace } 
+tag = GER 
+		}
+		
+		fire_only_once = no
+days_remove = 20
+		
+		cost = 25
+		
+		complete_effect = {
+
+set_country_flag = ger_peregovarivaet
+ 
+		}
+		remove_effect = {
+clr_country_flag = ger_peregovarivaet
+custom_effect_tooltip = ger_per_3
+add_to_variable = { var = global.gervleng value = 3}
+}
+		
+		ai_will_do = {
+			factor = 15
+		}
+	}
+
+
+}

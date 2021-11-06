@@ -1,0 +1,29 @@
+
+state={
+	id=914
+	name="STATE_914"
+	manpower = 513130
+	
+	resources={
+      grain = 12
+fishr = 2
+	}
+	state_category = wasteland
+	
+	history={
+		owner = MON
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		add_core_of = MON
+		buildings = {
+			infrastructure = 4
+			sklad = 1
+
+		}
+	}
+
+	provinces={
+		  7743 12690 4745 13150 10638 10612 
+	}
+}

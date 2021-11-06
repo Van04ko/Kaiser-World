@@ -1,0 +1,26 @@
+state={
+	id=889
+	name="STATE_889" 
+
+	resources={
+      grain = 4 
+fishr = 12
+	}
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SOV 
+		victory_points = {
+			9663 1
+		}
+	}
+
+	provinces={
+		  11647 9663 3698 
+	}
+	manpower=263970 
+	state_category=pastoral
+}

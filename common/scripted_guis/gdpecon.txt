@@ -1,0 +1,22 @@
+scripted_gui = {
+
+	diplo_show = {
+		context_type = selected_country_context
+		
+		window_name = "econ_inf_container"
+		
+		parent_window_token = selected_country_view_diplomacy
+		
+		visible = {
+            always = yes
+		}
+
+		effects = {
+		}
+		
+		triggers = {
+			
+		}
+	}
+	
+}

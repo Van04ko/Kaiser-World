@@ -1,0 +1,82 @@
+guiTypes = {
+	containerWindowType = {
+		name = "itnegr_state_container"
+		position = { x = 5 y = 485 } #-55/490
+		Orientation = upper_left 
+		
+		buttonType = {
+			name = "itnegr_state"
+			position = { x = 60 y = -186 }			
+			quadTextureSprite = "GFX_itnegr_state"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+		}
+
+			instantTextboxType = {
+				name = "itnegr_text"
+				position = { x = 60 y = -186 }
+				textureFile = ""
+				font = "hoi_36header"
+				text = " "
+				maxWidth = 70
+				maxHeight = 100
+				format = center
+			pdx_tooltip = "INTEGR_TOOLTIP_BASE" 
+			}
+		}
+		
+				containerWindowType = {
+		name = "governators_page"
+		position = { x = 150 y = 100}	
+		
+		size = { width = 1280 height = 720 }
+		
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+        
+		orientation = UPPER_LEFT
+        
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_browser_bg"
+		}
+				buttonType = {
+			name = "button_close"
+			position = { x = 510 y = 675 }
+			spriteType = "GFX_sort_button_100x29_2"
+                        frame = 2
+			buttonFont = "hoi_16mbs"
+			buttonText = exit_desc
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			Orientation = "UPPER_LEFT"
+		}
+		
+				buttonType = {
+			name = "desc_gov1"
+			position = { x = 50 y = 90 }			
+			quadTextureSprite = "GFX_shablon_governator1"
+			clicksound = click_default
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "example_1_tooltip"
+			
+		}
+		instantTextBoxType = {
+			name ="desc_gov1_desc"
+			position = { x= 50 y = 90 }
+			font = "hoi_18mbs"
+			text = " "
+			format = center
+			maxWidth = 80
+			maxHeight = 100
+			fixedsize = yes
+			
+			pdx_tooltip = "GO1_TOOLTIP" 
+		}
+		}
+		
+		}

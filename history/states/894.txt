@@ -1,0 +1,28 @@
+
+state={
+	id=894
+	name="STATE_894"
+	manpower = 1767336
+	
+	state_category = rural
+
+	resources={
+      grain = 20
+	}
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 5
+			sklad = 1
+		}
+		victory_points = {
+			6474 10
+		}
+		add_core_of = SOV
+		add_core_of = UKR
+	}
+
+	provinces={
+		502 3449 3466 3479 3491 6420 6776 
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=843
+	name="STATE_843"
+	manpower = 232000
+	
+	resources={
+      grain = 3 
+fishr = 3
+	}
+	state_category = pastoral
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			7151 1 
+		} 
+
+		add_core_of = JOR
+	}
+
+	provinces={
+		 7170 7151 10089 4017 4115 7001 11976 4591 4574 
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=904
+	name="STATE_904"
+
+	resources={
+      grain = 4 
+fishr = 16
+	} 
+	history={
+		owner = GIB
+		victory_points = {
+			875 3
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			sklad = 1
+
+		}
+		add_core_of = SPR
+
+	}
+
+	provinces={
+		 7198 6744 875 879 3871 3810 
+	}
+	manpower=1028513 
+	state_category=town
+}

@@ -1,0 +1,35 @@
+
+	spriteTypes = {
+
+spriteType = {
+		
+name = "GFX_size_state_icon"
+		
+textureFile = "gfx/interface/dynamic_modifier/size_state_icon.dds"
+	
+}
+
+spriteType = {
+		
+name = "GFX_size_state_icon2"
+		
+textureFile = "gfx/interface/dynamic_modifier/size_state_icon2.dds"
+	
+}
+spriteType = {
+		
+name = "GFX_size_state_icon3"
+		
+textureFile = "gfx/interface/dynamic_modifier/size_state_icon3.dds"
+	
+}
+spriteType = {
+		
+name = "GFX_size_state_icon4"
+		
+textureFile = "gfx/interface/dynamic_modifier/size_state_icon4.dds"
+	
+} 
+
+
+}

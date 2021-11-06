@@ -1,0 +1,113 @@
+on_actions = {
+
+on_startup = {
+effect = {
+
+				set_variable = { global.gervlfra = 0 } 
+				set_variable = { global.fravl = 0 } 
+				set_variable = { global.engvl = 0 } 
+				set_variable = { global.gervleng = 0 } 
+
+				set_variable = { global.pertreat1 = 90 }
+				set_variable = { global.pertreat2 = 180 }
+}}
+
+on_daily_GER = {
+effect = {
+if = { limit = { GER = { has_completed_focus = GER_entetne_peace } }
+ 
+subtract_from_variable  = { var = global.pertreat1 value = 1 } 
+subtract_from_variable  = { var = global.pertreat2 value = 1 } 
+  
+}
+if = { limit = { check_variable= { global.pertreat1 = 0  } }
+	set_variable = { peregovori_zaversh1 = 1 }
+
+if = { limit = { check_variable = { global.gervlfra >  global.fravl } } 
+	 GER = { country_event = {days = 1 id = KRRger.7 } } 
+}
+if = { limit = { check_variable = { global.gervleng >  global.engvl } } 
+	 GER = { country_event = {days = 2 id = KRRger.5 } } 
+}
+
+				set_variable = { global.gervlfra = 0 } 
+				set_variable = { global.fravl = 0 } 
+				set_variable = { global.engvl = 0 } 
+				set_variable = { global.gervleng = 0 } 
+
+}
+if = { limit = { check_variable= { global.pertreat2 = 0 }  }
+	set_variable = { peregovori_zaversh2 = 1 }
+	set_variable = { global.peregovori_zaversh222 = 1 }
+
+if = { limit = { check_variable = { global.gervlfra >  global.fravl } } 
+	 GER = { country_event = {days = 1 id = KRRger.8 } } 
+}
+if = { limit = { check_variable = { global.gervleng >  global.engvl } } 
+	 GER = { country_event = {days = 2 id = KRRger.6 } } 
+}
+				set_variable = { global.gervlfra = 0 } 
+				set_variable = { global.fravl = 0 } 
+				set_variable = { global.engvl = 0 } 
+				set_variable = { global.gervleng = 0 } 
+}
+if = { limit = { GER = { check_variable= { peregovori_zaversh1 = 1 } } }
+	set_variable = { global.pertreat1 = 0 }
+}
+if = { limit = { GER = { check_variable= { peregovori_zaversh2 = 1 } } }
+	set_variable = { global.pertreat2 = 0 }
+}
+} }
+
+on_daily_GER = {
+effect = {  
+add_to_variable = { var = gerfuck value = 1 } 
+
+ 
+
+ 
+if = { 
+limit = { AND = { 
+check_variable= { gerfuck > 6 }
+NOT = { has_completed_focus = GER_russian_cooperation }
+} }
+
+			unlock_national_focus = GER_russian_cooperation 
+GER = { country_event = {days = 1 id = KRRger.1 } } 
+}
+if = { 
+limit = { AND = { 
+check_variable= { gerfuck > 13 }
+NOT = { has_completed_focus = GER_entetne_peace}
+} }
+
+			unlock_national_focus = GER_entetne_peace
+GER = { country_event = {days = 1 id = KRRger.2 } } 
+}
+}}
+
+on_startup = { 
+effect = {
+every_country = {
+ 
+every_owned_state = { 
+THIS = { owner = { add_to_variable = { var = adminmax value = 1} } }
+}
+every_owned_state = { 
+THIS = { owner = { add_to_variable = { var = adminlim value = 1} } }
+}
+} 
+} }
+
+on_daily = { 
+effect = {
+every_country = {
+
+set_variable = { var = adminlim value = 0}
+every_owned_state = { 
+THIS = { owner = { add_to_variable = { var = adminlim value = 1} } }
+}
+} 
+} }
+####
+}

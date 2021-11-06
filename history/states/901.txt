@@ -1,0 +1,26 @@
+
+state={
+	id=901
+	name="STATE_901" # Libyan Desert
+	manpower = 22633
+	
+	resources={
+      grain = 8 
+fishr = 12
+	}
+	state_category = pastoral
+
+	history={
+		owner = ITB
+		buildings = {
+			infrastructure = 1
+			sklad = 1
+		}
+		add_core_of = ITB
+		add_core_of = SRD
+	}
+
+	provinces={
+		 11824  
+	}
+}

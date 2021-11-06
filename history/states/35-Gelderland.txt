@@ -1,0 +1,35 @@
+
+state={
+	id=35
+	name="STATE_35"
+
+	resources={
+      grain = 17 
+fishr = 21
+	}
+	history={
+		owner = HOL
+		add_core_of = HOL
+		add_core_of = KNE
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			sklad = 2
+
+		}
+		victory_points = {
+			6496 10 
+		}
+		victory_points = {
+			3262 5 
+		}
+
+	}
+
+	provinces={
+		480 3262 6496 6500 9431 11456 11562 
+	}
+	manpower=2290409
+	buildings_max_level_factor=1.000
+	state_category=city
+}

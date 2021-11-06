@@ -1,0 +1,20 @@
+state={
+	id=832
+	name="STATE_832"
+
+	history={
+		owner = TUR
+		add_core_of = ARM
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		6997 
+	}
+	manpower=50082
+	state_category=wasteland
+}

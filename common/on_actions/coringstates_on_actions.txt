@@ -1,0 +1,23 @@
+on_actions = {
+
+on_startup = {
+effect = {
+every_state = {
+			set_variable = { coringstate_cost = state_population_k }
+
+            	round_variable = coringstate_cost 
+			set_variable = { coringstate_cost2 = coringstate_cost }
+                                multiply_variable = { var = coringstate_cost2 value = 2 }
+}}}
+
+on_monthly = {
+effect = {
+every_state = {
+			set_variable = { coringstate_cost = state_population_k }
+            	round_variable = coringstate_cost 
+			set_variable = { coringstate_cost2 = coringstate_cost }
+                                multiply_variable = { var = coringstate_cost2 value = 2 }
+}}}
+
+#################################
+}

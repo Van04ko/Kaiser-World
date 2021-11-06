@@ -1,0 +1,27 @@
+state={
+	id=875
+	name="STATE_875"
+	manpower = 643373
+	
+	resources={
+      grain = 13 
+fishr = 6
+	}
+	state_category = pastoral
+
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			sklad = 1
+		}
+
+	}
+
+	provinces={
+		846 916 4642 9831 930  
+	}
+}

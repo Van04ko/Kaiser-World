@@ -1,0 +1,29 @@
+state={
+	id=878
+	name="STATE_878"
+
+	resources={
+      grain = 18 
+fishr = 8
+	}
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+			sklad = 1
+
+		}
+		victory_points = {
+			3392 1
+		} 
+		add_core_of = POL
+		add_core_of = BLR
+		add_core_of = UKR
+	}
+
+	provinces={
+		 3392 11528 6546 
+	}
+	manpower=1002200
+	state_category=rural
+}

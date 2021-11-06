@@ -1,0 +1,24 @@
+
+state={
+	id=819
+	name="STATE_819"
+	manpower = 370800
+	
+	state_category = town
+
+	history={
+		owner = GER
+		victory_points = {
+			9490 5 
+		}
+		buildings = {
+			infrastructure = 7
+			air_base = 10
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		9505 6545 3546 13011 
+	}
+}

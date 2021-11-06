@@ -1,0 +1,37 @@
+state={
+	id=92
+	name="STATE_92"
+
+	resources={
+      grain = 11
+fishr = 6
+	}
+	history={
+		victory_points = {
+			11399 1 
+		}
+		owner = GER
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 1
+			sklad = 1
+
+		}
+		add_core_of = POL
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6580 9452 11399 11466 
+	}
+	manpower=2064600 
+	state_category=town
+}

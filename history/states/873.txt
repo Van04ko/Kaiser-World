@@ -1,0 +1,32 @@
+state=
+{
+	id=873
+	name="STATE_873"
+	manpower = 8373200
+	state_category = rural
+	
+	resources={
+      grain = 24 
+fishr = 21
+	}
+	
+	history=
+	{
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+skad = 1
+			4205 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+
+	}
+	provinces={
+		  4157 7089 12074 1184 7105 4186 1104 1200 10018 4205 
+	}
+}

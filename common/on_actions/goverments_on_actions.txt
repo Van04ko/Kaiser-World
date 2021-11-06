@@ -1,0 +1,138 @@
+on_actions = {
+
+    on_daily = {
+effect = {
+every_country = {
+set_variable = { govprov = num_of_controlled_states }
+} 
+
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government1 
+check_variable= { govprov > 1  } 
+}
+} 
+add_ideas = government2 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government2 
+check_variable= { govprov > 5  } 
+}
+} 
+add_ideas = government3 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government3 
+check_variable= { govprov > 11  } 
+}
+} 
+add_ideas = government4 
+}
+}
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government4 
+check_variable= { govprov > 20  } 
+}
+} 
+add_ideas = government5 
+}
+}
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government5 
+check_variable= { govprov > 30  } 
+}
+} 
+add_ideas = government6 
+}
+}
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government6
+check_variable= { govprov > 50  } 
+}
+} 
+add_ideas = government7 
+}
+}
+#######################
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government2
+check_variable= { govprov = 1  } 
+}
+} 
+add_ideas = government1 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government3
+check_variable= { govprov < 6  } 
+}
+} 
+add_ideas = government2 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government4 
+check_variable= { govprov < 12  } 
+}
+} 
+add_ideas = government3 
+}
+}
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government5 
+check_variable= { govprov < 21  } 
+}
+} 
+add_ideas = government4 
+}
+}
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government6 
+check_variable= { govprov < 31  } 
+}
+} 
+add_ideas = government5 
+}
+}
+	effect = {
+if = { limit = {
+AND = {
+has_idea = government7
+check_variable= { govprov < 51  } 
+}
+} 
+add_ideas = government6 
+}
+}
+}
+
+######################################
+}

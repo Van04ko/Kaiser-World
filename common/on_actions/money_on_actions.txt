@@ -1,0 +1,702 @@
+on_actions = {
+on_startup = {
+effect = {
+CMD = { 
+set_variable = { teorm = 1.05 }
+set_variable = { teormv = 5 }
+}
+INI = { 
+set_variable = { teorm = 1.15 }
+set_variable = { teormv = 15 }
+}
+SIM = { 
+	give_resource_rights = { receiver = GIL state = 274 }
+			 }
+every_country = {
+				set_variable = { dopmon = 0}
+				set_variable = { inf0 = 0}
+				set_variable = { inf10 = 10}
+				set_variable = { inf25 = 25}
+				set_variable = { inf50 = 50}
+}
+}
+}
+
+    on_daily = {
+effect = {
+every_country = {
+
+if = {
+limit = { has_idea = army_ras1 } 
+set_variable = { armrasm = 0.5 } 
+} 
+if = {
+limit = { has_idea = army_ras2 } 
+set_variable = { armrasm = 0.75 } 
+} 
+if = {
+limit = { has_idea = army_ras3 } 
+set_variable = { armrasm = 1 } 
+} 
+if = {
+limit = { has_idea = army_ras4 } 
+set_variable = { armrasm = 1.5 } 
+} 
+if = {
+limit = { has_idea = army_ras5 } 
+set_variable = { armrasm = 2 } 
+} 
+if = {
+limit = { check_variable= { inf10 = 0 } } 
+set_variable = { inf10 = 10}
+set_variable = { inf25 = 25}
+set_variable = { inf50 = 50}
+} } } }
+
+        on_monthly = {
+		effect = {
+				add_to_variable = { var = minflation value = 0.5}
+
+if = { limit = {
+has_idea = economy_veryhighrate 
+} 
+subtract_from_variable  = { var = minflation value = 0.3 }
+}
+if = { limit = {
+has_idea = economy_highrate 
+} 
+subtract_from_variable  = { var = minflation value = 0.2 }
+}
+if = { limit = {
+has_idea = economy_mediumrate 
+} 
+subtract_from_variable  = { var = minflation value = 0.1 }
+}
+if = { limit = {
+has_idea = economy_lowrate 
+} 
+add_to_variable = { var = minflation value = 0.1}
+}
+
+}
+}
+ ##Замена идей##
+
+
+
+on_monthly = {
+	effect = {
+				set_variable = { provchecki = num_of_controlled_states }
+                                multiply_variable = { var = provchecki value = -25 }
+				set_variable = { provchecki2 = provchecki }
+                                multiply_variable = { var = provchecki2 value = 2 }
+				set_variable = { provchecki3 = provchecki2 }
+                                multiply_variable = { var = provchecki3 value = 2 }
+}
+
+	effect = {
+
+
+if = { limit = {
+AND = {
+has_idea = inflaation1 
+check_variable= { minflation < inf0 } 
+}
+} 
+add_ideas = inflaation0
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = inflaation0
+check_variable= { minflation > inf0 } 
+}
+} 
+add_ideas = inflaation1 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = inflaation2 
+check_variable= { minflation < inf10 } 
+}
+} 
+add_ideas = inflaation1 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = inflaation1 
+check_variable= { minflation > inf10 } 
+}
+} 
+add_ideas = inflaation2 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = inflaation3 
+check_variable= { minflation < inf25 } 
+}
+} 
+add_ideas = inflaation2 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = inflaation2 
+check_variable= { minflation > inf25 } 
+}
+} 
+add_ideas = inflaation3 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = inflaation4 
+check_variable= { minflation < inf50 } 
+}
+} 
+add_ideas = inflaation3 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = inflaation3 
+check_variable= { minflation > inf50 } 
+}
+} 
+add_ideas = inflaation4 
+}
+}
+###############
+	effect = {
+if = { limit = {
+AND = {
+has_idea = crisis1 
+check_variable= { mdx > provchecki  } 
+}
+} 
+add_ideas = crisis0 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = crisis0 
+check_variable= { mdx < provchecki  } 
+}
+} 
+add_ideas = crisis1 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = crisis2 
+check_variable= { mdx > provchecki2  } 
+}
+} 
+add_ideas = crisis1 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = crisis1 
+check_variable= { mdx < provchecki2  } 
+}
+} 
+add_ideas = crisis2 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = crisis3 
+check_variable= { mdx > provchecki3  } 
+}
+} 
+add_ideas = crisis2 
+}
+}
+
+	effect = {
+if = { limit = {
+AND = {
+has_idea = crisis2 
+check_variable= { mdx < provchecki3  } 
+}
+} 
+add_ideas = crisis3 
+}
+}
+} 
+ 
+    on_daily = {
+		effect = {
+				clear_variable = rincome
+				clear_variable = allexpenses
+				clear_variable =  mnmn
+
+				set_variable = { mnmn = 0}
+				divide_variable = { var = mnmn value = 10 }
+
+
+
+
+######MEHANICA_RASHODOV##
+				set_variable = { prov = num_of_controlled_states} #Сколько стейтов контролируется
+				multiply_variable = { var = prov value = 10 } 
+				set_variable = { provmax = prov } 
+				multiply_variable = { var = provmax value = 2 } 
+				set_variable = { provil = prov } 
+                                divide_variable = { var = provil value = 2 }
+				set_variable = { provfix= prov}
+                                divide_variable = { var = provfix value = 0.9 }
+				set_variable = { provac= prov }
+                                multiply_variable = { var = provac value = 3 }
+                                divide_variable = { var = provac value = 2 }
+				set_variable = { proarm= prov}
+                                multiply_variable = { var = proarm value = 30 }
+				set_variable = { proarmfix = proarm }
+                                multiply_variable = { var = proarmfix value = 1  } #Винтовки
+				set_variable = { prodop = prov}
+                                multiply_variable = { var = prodop value = 4 } 
+				set_variable = { proartrans = prov}
+                                multiply_variable = { var = proartrans value = 2.5 } #Транспорт
+				set_variable = { proamf = prov}
+                                multiply_variable = { var = proamf value = 1.75 }
+				set_variable = { promed = prov}
+                                multiply_variable = { var = promed value = 1.5 }
+				set_variable = { protra = prov}
+                                multiply_variable = { var = protra value = 6 }
+				set_variable = { proart = prov}
+                                multiply_variable = { var = proart value = 8 }
+				set_variable = { proheavy = prov}
+                                multiply_variable = { var = proheavy value = 0.5 } 
+				set_variable = { promedium = prov}
+                                multiply_variable = { var = proheavy promedium = 0.8 } 
+
+				set_variable = { naem = num_of_controlled_states} #наемники
+                             multiply_variable = { var = naem value = 50 } 
+
+				set_variable = { nerfeco = max_manpower_k }
+				divide_variable = { var = nerfeco value = 100000 }
+
+				if={
+				limit={
+				has_idea = low_obrazovanie
+				}
+                                multiply_variable = { var = nerfeco value = 0.5 }
+				}
+				if={
+				limit={
+				has_idea = normal_obrazovanie
+				}
+                                multiply_variable = { var = nerfeco value = 1 }
+				}
+				if={
+				limit={
+				has_idea = high_obrazovanie
+				}
+                                multiply_variable = { var = nerfeco value = 2 }
+				}
+				if={
+				limit={
+				has_idea = very_high_obrazovanie
+				}
+                                multiply_variable = { var = nerfeco value = 4 }
+				}
+
+				set_variable = { nerfecor = max_manpower_k }
+				divide_variable = { var = nerfecor value = 100000 }
+				if={
+				limit={
+				has_idea = budget_scientific_funding_private_ventures_only 
+				}
+                                multiply_variable = { var = nerfecor value = 0 }
+				}
+				if={
+				limit={
+				has_idea = budget_scientific_funding_limited_state_sponsorship 
+				}
+                                multiply_variable = { var = nerfecor value = 0.5 }
+				}
+				if={
+				limit={
+				has_idea = budget_scientific_funding_regular_state_sponsorship
+				}
+                                multiply_variable = { var = nerfecor value = 1 }
+				}
+				if={
+				limit={
+				has_idea = budget_scientific_funding_excellent_state_sponsorship
+				}
+                                multiply_variable = { var = nerfecor value = 2 }
+				}
+
+				set_variable = { nerfmed = max_manpower_k }
+				divide_variable = { var = nerfmed value = 100000 }
+
+				if={
+				limit={
+				has_idea = low_medecina
+				}
+                                multiply_variable = { var = nerfmed value = 0.5 }
+				}
+				if={
+				limit={
+				has_idea = normal_medecina
+				}
+                                multiply_variable = { var = nerfmed value = 1 }
+				}
+				if={
+				limit={
+				has_idea = high_medecina
+				}
+                                multiply_variable = { var = nerfmed value = 2 }
+				}
+				if={
+				limit={
+				has_idea = very_high_medecina
+				}
+                                multiply_variable = { var = nerfmed value = 4 }
+				}
+
+				set_variable = { boneco = max_manpower_k }
+				divide_variable = { var = boneco value = 75000 }
+
+				if={
+				limit={
+				has_idea = low_nalogi
+				}
+                               multiply_variable = { var = boneco value = 2 }
+				}
+				if={
+				limit={
+				has_idea = normal_nalogi
+				}
+                                multiply_variable = { var = boneco value = 4 }
+				}
+				if={
+				limit={
+				has_idea = high_nalogi
+				}
+                                multiply_variable = { var = boneco value = 8 }
+				}
+				if={
+				limit={
+				has_idea = very_high_nalogi
+				}
+                                multiply_variable = { var = boneco value = 16 }
+				}
+
+
+				if={
+				limit={
+				has_idea = civilian_economy 
+				}
+                                multiply_variable = { var = boneco  value = 1.1  }
+				}
+				if={
+				limit={
+				has_idea = partial_economic_mobilisation 
+				}
+                                multiply_variable = { var = boneco  value = 0.9 }
+				}
+				if={
+				limit={
+				has_idea = war_economy 
+				}
+                                multiply_variable = { var = boneco  value = 0.8 }
+				}
+				if={
+				limit={
+				has_idea = tot_economic_mobilisation 
+				}
+                                multiply_variable = { var = boneco  value = 0.5 }
+				}
+				
+				if={
+				limit={
+				has_idea = press_free  
+				}
+                                multiply_variable = { var = boneco  value = 1.15  }
+				}
+				if={
+				limit={
+				has_idea = press_chutchutogr   
+				}
+                                multiply_variable = { var = boneco  value = 1.1  }
+				} 
+				if={
+				limit={
+				has_idea = press_balanced    
+				}
+                                multiply_variable = { var = boneco  value = 0.9  }
+				} 
+				if={
+				limit={
+				has_idea = press_order    
+				}
+                                multiply_variable = { var = boneco  value = 0.85  }
+				} 
+				if={
+				limit={
+				has_idea = press_gosprop    
+				}
+                                multiply_variable = { var = boneco  value = 0.8  }
+				} 
+				if={
+				limit={
+				has_idea = Schastie7     
+				}
+                                multiply_variable = { var = boneco  value = 1.15  }
+				} 
+				if={
+				limit={
+				has_idea = Schastie6     
+				}
+                                multiply_variable = { var = boneco  value = 1.1  }
+				} 
+				if={
+				limit={
+				has_idea = Schastie5     
+				}
+                                multiply_variable = { var = boneco  value = 1.05  }
+				} 
+				if={
+				limit={
+				has_idea = Schastie3     
+				}
+                                multiply_variable = { var = boneco  value = 0.95  }
+				} 
+				if={
+				limit={
+				has_idea = Schastie2     
+				}
+                                multiply_variable = { var = boneco  value = 0.9  }
+				} 
+				if={
+				limit={
+				has_idea = Schastie1     
+				}
+                                multiply_variable = { var = boneco  value = 0.85  }
+				} 
+#########################
+
+				if={
+				limit={
+				has_idea = government1 
+				}
+                                multiply_variable = { var = mno value = 0.75 }
+                                multiply_variable = { var = fleetm value = 0.75 }
+                                multiply_variable = { var = plainm value = 0.75 }
+                                multiply_variable = { var = mnc value = 0.75 }
+                                multiply_variable = { var = mms value = 0.75 }
+				}
+
+				if={
+				limit={
+				has_idea = government2 
+				}
+                                multiply_variable = { var = mno value = 0.9 }
+                                multiply_variable = { var = fleetm value = 0.9 }
+                                multiply_variable = { var = plainm value = 0.9 }
+                                multiply_variable = { var = mnc value = 0.9 }
+                                multiply_variable = { var = mms value = 0.9 }
+				}
+
+				if={
+				limit={
+				has_idea = government4 
+				}
+                                multiply_variable = { var = mno value = 1.1 }
+                                multiply_variable = { var = fleetm value = 1.1 }
+                                multiply_variable = { var = plainm value = 1.1 }
+                                multiply_variable = { var = mnc value = 1.1 }
+                                multiply_variable = { var = mms value = 1.1 }
+				}
+
+				if={
+				limit={
+				has_idea = government5 
+				}
+                                multiply_variable = { var = mno value = 1.25 }
+                                multiply_variable = { var = fleetm value = 1.25 }
+                                multiply_variable = { var = plainm value = 1.25 }
+                                multiply_variable = { var = mnc value = 1.25 }
+                                multiply_variable = { var = mms value = 1.25 }
+				}
+
+				if={
+				limit={
+				has_idea = government6 
+				}
+                                multiply_variable = { var = mno value = 1.5 }
+                                multiply_variable = { var = fleetm value = 1.5 }
+                                multiply_variable = { var = plainm value = 1.5 }
+                                multiply_variable = { var = mnc value = 1.5 }
+                                multiply_variable = { var = mms value = 1.5 }
+				}
+
+				if={
+				limit={
+				has_idea = government7 
+				}
+                                multiply_variable = { var = mno value = 2 }
+                                multiply_variable = { var = fleetm value = 2 }
+                                multiply_variable = { var = plainm value = 2 }
+                                multiply_variable = { var = mnc value = 2 }
+                                multiply_variable = { var = mms value = 2 }
+				}
+###################################
+				#set_variable = { mnc= num_of_controlled_states}
+				#divide_variable = { var = mnc value = 60 }
+  
+				set_variable = { mnc = max_manpower_k }
+				divide_variable = { var = mnc value = 100000 }
+
+				set_variable = { mno = num_occupied_states }
+				divide_variable = { var = mno value = 45 }
+				set_variable = { mms = num_divisions}
+				divide_variable = { var = mms value = 67 }
+				multiply_variable = { var = mms value = armrasm }
+				set_variable = { mverf_export = num_of_naval_factories }
+				divide_variable = { var = mverf_export value = 20 }
+				multiply_variable = { var = mms value = mverf_export }
+				set_variable = { nf = num_of_military_factories}
+				divide_variable = { var = nf value = 20 }
+				multiply_variable = { var = mms value = nf }
+				set_variable = { fleetm = num_ships}
+				divide_variable = { var = fleetm value = 118 }
+				set_variable = { plainm = num_deployed_planes}
+				divide_variable = { var = plainm value = 1180 }
+
+every_owned_state = {
+set_temp_variable = { var = commernum value = building_level@commercial_zones }
+THIS = { owner = { add_to_variable = { var = comdx value = commernum } } }
+}
+multiply_variable = { var = comdx value = 0.08  }
+				add_to_variable = { var = rincome value = comdx } #Коммерческие зоны
+
+				set_variable = { cfff = num_of_civilian_factories }
+				divide_variable = { var = cfff value = 20 }
+				set_variable = { mgrain_import = resource_imported@grain}
+				divide_variable = { var = mgrain_import value = 150 }
+				set_variable = { mgrain_export = resource_exported@grain}
+				divide_variable = { var = mgrain_export value = 150 }
+				set_variable = { msteel_import = resource_imported@steel}
+				divide_variable = { var = msteel_import value = 60 }
+				set_variable = { msteel_export = resource_exported@steel}
+				divide_variable = { var = msteel_export value = 60 }
+				set_variable = { mchromium_import = resource_imported@chromium}
+				divide_variable = { var = mchromium_import value = 50 }
+				set_variable = { mchromium_export = resource_exported@chromium}
+				divide_variable = { var = mchromium_export value = 50 }
+				set_variable = { maluminum_import = resource_imported@aluminium}
+				divide_variable = { var = maluminum_import value = 50 }
+				set_variable = { maluminum_export = resource_exported@aluminium}
+				divide_variable = { var = maluminum_export value = 50 }
+				set_variable = { mgold_import = resource_imported@goldr}
+				divide_variable = { var = mgold_import value = 20 }
+				set_variable = { moil_import = resource_imported@oil}
+				divide_variable = { var = moil_import value = 50 }
+				set_variable = { moil_export = resource_exported@oil}
+				divide_variable = { var = moil_export value = 50 }
+				set_variable = { mrubber_import = resource_imported@rubber}
+				divide_variable = { var = mrubber_import value = 50 }
+				set_variable = { mrubber_export = resource_exported@rubber}
+				divide_variable = { var = mrubber_export value = 50 }
+				set_variable = { mtungsten_import = resource_imported@tungsten}
+				divide_variable = { var = mtungsten_import value = 50 }
+				set_variable = { mtungsten_export = resource_exported@tungsten}
+				divide_variable = { var = mtungsten_export value = 50  }
+				set_variable = { mgold_export = resource_exported@goldr}
+				divide_variable = { var = mgold_export value = 20  }
+
+				set_variable ={rincome = 0 }
+				set_variable ={mallexpenses = 0 }
+
+				add_to_variable = { var = rincome value = boneco } #Налоги
+				add_to_variable = { var = rincome value = cfff } #Доход с фабрик
+				add_to_variable = { var = rincome value = mtungsten_export } 
+				add_to_variable = { var = rincome value = mrubber_export }
+				add_to_variable = { var = rincome value = msteel_export }
+				add_to_variable = { var = rincome value = mgrain_export }
+				add_to_variable = { var = rincome value = mchromium_export }
+				add_to_variable = { var = rincome value = maluminum_export }
+				add_to_variable = { var = rincome value = moil_export }
+				add_to_variable = { var = rincome value = mgold_export }
+				add_to_variable = { var = rincome value = dopmon } #Дополнительные доходы
+
+				add_to_variable = { var = mallexpenses value = nerfmed } #Расходы на медицину
+				add_to_variable = { var = mallexpenses value = nerfeco } #Расходы на образование
+				add_to_variable = { var = mallexpenses value = nerfecor } #Расходы на исследования
+				add_to_variable = { var = mallexpenses value = nf } #Расходы на военные заводы
+				add_to_variable = { var = mallexpenses value = mrubber_import }
+				add_to_variable = { var = mallexpenses value = mtungsten_import }
+				add_to_variable = { var = mallexpenses value = maluminum_import }
+				add_to_variable = { var = mallexpenses value = moil_import }
+				add_to_variable = { var = mallexpenses value = mchromium_import }
+				add_to_variable = { var = mallexpenses value = mgrain_import }
+				add_to_variable = { var = mallexpenses value = msteel_import }
+				add_to_variable = { var = mallexpenses value = mverf_export }
+				add_to_variable = { var = mallexpenses value = mgold_import }
+				add_to_variable = { var = mallexpenses value = mno }
+				add_to_variable = { var = mallexpenses value = fleetm }	
+				add_to_variable = { var = mallexpenses value = plainm }	
+				add_to_variable = { var = mallexpenses value = mnc }
+				add_to_variable = { var = mallexpenses value = mms }
+				add_to_variable = { var = mnmn value = rincome }
+
+				subtract_from_variable = { var = mnmn value = mallexpenses }
+
+         #MEHANICA_INFLATION
+				set_variable = { mecinf = 1}
+				set_variable = { inflationvlianie = minflation}
+				divide_variable = { var = inflationvlianie value = 200 }
+				subtract_from_variable = { var = mecinf value = inflationvlianie }
+                                multiply_variable = { var = mnmn value = mecinf }
+				set_variable = { mecinflation = 100}
+                                multiply_variable = { var = mecinflation value = inflationvlianie }
+
+         ##############
+
+
+
+				if={
+				limit={
+				check_variable= { teorm > 0 }
+				}
+                                multiply_variable = { var = mnmn value = teorm }
+				}
+
+				set_variable ={movercome= mnmn }
+            	add_to_variable = { var = mdx value = mnmn  }
+
+
+
+        }
+    }
+    
+}

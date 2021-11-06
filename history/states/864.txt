@@ -1,0 +1,29 @@
+
+state={
+	id=864
+	name="STATE_864" # Pskov
+	manpower = 39587
+	
+	resources={
+      grain = 3
+fishr = 10
+	}
+	state_category = pastoral
+
+	history={
+		owner = SOV
+		victory_points = {
+			11202 3
+		}
+		buildings = {
+			infrastructure = 5
+			sklad = 1
+		}
+		add_core_of = SOV
+		add_core_of = EST
+	}
+
+	provinces={
+		9120 9408 
+	}
+}

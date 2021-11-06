@@ -1,0 +1,25 @@
+
+state={
+	id=921
+	name="STATE_921"
+	manpower = 22130
+	
+	resources={
+      grain = 2
+	}
+	state_category = wasteland
+	
+	history={
+		owner = TUR
+		add_core_of = PAL
+		add_core_of = ISR
+		buildings = {
+			infrastructure = 2  
+
+		} 
+	}
+
+	provinces={
+		13268 
+	}
+}

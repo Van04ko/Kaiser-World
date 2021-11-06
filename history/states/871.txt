@@ -1,0 +1,26 @@
+state={
+	id=871
+	name="STATE_871"
+
+	resources={
+      grain = 6
+fishr = 8
+	}
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		6951 9788 9835 11815 
+	}
+	manpower=2264620
+	state_category=rural
+}

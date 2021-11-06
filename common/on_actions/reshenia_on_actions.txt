@@ -1,0 +1,692 @@
+on_actions = {
+on_startup = {
+effect = {
+
+every_country = {
+				set_variable = { desccostyl = 1}
+				set_variable = { desc1 = 0}
+				set_variable = { desc1check = 90}
+				set_variable = { desc11 = 0}
+				set_variable = { desc11check = 60}
+				set_variable = { desc12 = 0}
+				set_variable = { desc12check = 60}
+				set_variable = { desc13 = 0}
+				set_variable = { desc13check = 90}
+				set_variable = { desc14 = 0}
+				set_variable = { desc14check = 90}
+				set_variable = { desc21 = 0}
+				set_variable = { desc21check = 90}
+				set_variable = { desc22 = 0}
+				set_variable = { desc22check = 90}
+				set_variable = { desc23 = 0}
+				set_variable = { desc23check = 90}
+				set_variable = { desc24 = 0}
+				set_variable = { desc24check = 90}
+				set_variable = { desc25 = 0}
+				set_variable = { desc25check = 120}
+				set_variable = { desc26 = 0}
+				set_variable = { desc26check = 120}
+				set_variable = { desc27 = 0}
+				set_variable = { desc27check = 120}
+				set_variable = { desc28 = 0}
+				set_variable = { desc28check = 45}
+				set_variable = { desc29 = 0}
+				set_variable = { desc29check = 180}
+				set_variable = { desc30 = 0}
+				set_variable = { desc30check = 90}
+				set_variable = { desc31 = 0}
+				set_variable = { desc31check = 180}
+				set_variable = { desc32 = 0}
+				set_variable = { desc32check = 30}
+				set_variable = { desc33 = 0}
+				set_variable = { desc33check = 30}
+				set_variable = { desc34 = 0}
+				set_variable = { desc34check = 30}
+				set_variable = { desc2 = 0}
+				set_variable = { desc2check = 90}
+				set_variable = { desc3 = 0}
+				set_variable = { desc3check = 60}
+				set_variable = { desc4 = 0}
+				set_variable = { desc4check = 60}
+				set_variable = { desc5 = 0}
+				set_variable = { desc5check = 60}
+				set_variable = { desc6 = 0}
+				set_variable = { desc6check = 60}
+				set_variable = { desc7 = 0}
+				set_variable = { desc7check = 90}
+				set_variable = { desc8 = 0}
+				set_variable = { desc8check = 90}
+				set_variable = { desc9 = 0}
+				set_variable = { desc9check = 90}
+				set_variable = { desc10 = 0}
+				set_variable = { desc10check = 90}
+				set_variable = { desc35 = 0}
+				set_variable = { desc35check = 90}
+				set_variable = { desc36 = 0}
+				set_variable = { desc36check = 90}
+				set_variable = { desc37 = 0}
+				set_variable = { desc37check = 90}
+				set_variable = { desc38 = 0}
+				set_variable = { desc38check = 60}
+				set_variable = { desc39 = 0}
+				set_variable = { desc39check = 120}
+				set_variable = { desc40 = 0}
+				set_variable = { desc40check = 120}
+}
+}
+}
+
+
+    on_daily = {
+		effect = {
+		
+if = { limit = {
+check_variable= { desccostyl < 1 } 
+} 
+				set_variable = { var = desccostyl value = 1 }
+				set_variable = { desc1check = 90}
+				set_variable = { desc11check = 60}
+				set_variable = { desc12check = 60}
+				set_variable = { desc13check = 90}
+				set_variable = { desc14check = 90}
+				set_variable = { desc21check = 90}
+				set_variable = { desc22check = 90}
+				set_variable = { desc23check = 90}
+				set_variable = { desc24check = 90}
+				set_variable = { desc25check = 120}
+				set_variable = { desc26check = 120}
+				set_variable = { desc27check = 120}
+				set_variable = { desc28check = 45}
+				set_variable = { desc29check = 180}
+				set_variable = { desc30check = 90}
+				set_variable = { desc31check = 180}
+				set_variable = { desc32check = 30}
+				set_variable = { desc33check = 30}
+				set_variable = { desc34check = 30}
+				set_variable = { desc2check = 90}
+				set_variable = { desc3check = 60}
+				set_variable = { desc4check = 60}
+				set_variable = { desc5check = 60}
+				set_variable = { desc6check = 60}
+				set_variable = { desc7check = 90}
+				set_variable = { desc8check = 90}
+				set_variable = { desc9check = 90}
+				set_variable = { desc10check = 90}
+				set_variable = { desc35check = 90}
+				set_variable = { desc36check = 90}
+				set_variable = { desc37check = 90}
+				set_variable = { desc38check = 60}
+				set_variable = { desc39check = 120}
+				set_variable = { desc40check = 120}
+}
+		
+		
+if = { limit = {
+check_variable= { desc1 > 0 } 
+} 
+				add_to_variable = { var = desc1 value = 1 }
+				subtract_from_variable  = { var = desc1check value = 1 }
+}
+if = { limit = {
+check_variable= { desc1 > 90 } 
+} 
+				set_variable = { var = desc1 value = 0 }
+				set_variable = { var = desc1check value = 90 }
+				add_stability = 0.02
+				add_war_support = 0.03
+}
+
+if = { limit = {
+check_variable= { desc11 > 0 } 
+} 
+				add_to_variable = { var = desc11 value = 1 }
+				subtract_from_variable  = { var = desc11check value = 1 }
+}
+
+if = { limit = {
+check_variable= { desc11 > 60 } 
+} 
+				set_variable = { var = desc11 value = 0 }
+				set_variable = { var = desc11check value = 60 }
+				add_stability = 0.02
+subtract_from_variable = { var = minflation value = 5 }
+				
+}
+
+if = { limit = {
+check_variable= { desc12 > 0 } 
+} 
+				add_to_variable = { var = desc12 value = 1 }
+				subtract_from_variable  = { var = desc12check value = 1 }
+}
+if = { limit = {
+check_variable= { desc12 > 60 } 
+} 
+				set_variable = { var = desc12 value = 0 }
+				set_variable = { var = desc12check value = 60 }
+				add_stability = -0.03
+subtract_from_variable = { var = minflation value = 5 }
+				
+}
+
+if = { limit = {
+check_variable= { desc13 > 0 } 
+} 
+				add_to_variable = { var = desc13 value = 1 }
+				subtract_from_variable  = { var = desc13check value = 1 }
+}
+if = { limit = {
+check_variable= { desc13 > 90 } 
+} 
+				set_variable = { var = desc13 value = 0 }
+				set_variable = { var = desc13check value = 90 }
+subtract_from_variable = { var = minflation value = 5 }
+				
+}
+if = { limit = {
+check_variable= { desc14 > 0 } 
+} 
+				add_to_variable = { var = desc14 value = 1 }
+				subtract_from_variable  = { var = desc14check value = 1 }
+}
+if = { limit = {
+check_variable= { desc14 > 90 } 
+} 
+				set_variable = { var = desc14 value = 0 }
+				set_variable = { var = desc14check value = 90 }
+subtract_from_variable = { var = minflation value = 2.5 }
+				
+}
+if = { limit = {
+check_variable= { desc21 > 0 } 
+} 
+				add_to_variable = { var = desc21 value = 1 }
+				subtract_from_variable  = { var = desc21check value = 1 }
+}
+if = { limit = {
+check_variable= { desc21 > 90 } 
+} 
+				set_variable = { var = desc21 value = 0 }
+				set_variable = { var = desc21check value = 90 }
+add_political_power = 100
+				
+}
+if = { limit = {
+check_variable= { desc22 > 0 } 
+} 
+				add_to_variable = { var = desc22 value = 1 }
+				subtract_from_variable  = { var = desc22check value = 1 }
+}
+if = { limit = {
+check_variable= { desc22 > 90 } 
+} 
+				set_variable = { var = desc22 value = 0 }
+				set_variable = { var = desc22check value = 90 }
+add_stability = 0.05
+				
+}
+if = { limit = {
+check_variable= { desc23 > 0 } 
+} 
+				add_to_variable = { var = desc23 value = 1 }
+				subtract_from_variable  = { var = desc23check value = 1 }
+}
+if = { limit = {
+check_variable= { desc23 > 90 } 
+} 
+				set_variable = { var = desc23 value = 0 }
+				set_variable = { var = desc23check value = 90 }
+add_stability = 0.05
+				
+}
+if = { limit = {
+check_variable= { desc24 > 0 } 
+} 
+				add_to_variable = { var = desc24 value = 1 }
+				subtract_from_variable  = { var = desc24check value = 1 }
+}
+if = { limit = {
+check_variable= { desc24 > 90 } 
+} 
+				set_variable = { var = desc24 value = 0 }
+				set_variable = { var = desc24check value = 90 }
+add_stability = 0.05
+add_war_support = -0.05
+				
+}
+if = { limit = {
+check_variable= { desc25 > 0 } 
+} 
+				add_to_variable = { var = desc25 value = 1 }
+				subtract_from_variable  = { var = desc25check value = 1 }
+}
+if = { limit = {
+check_variable= { desc25 > 120 } 
+} 
+				set_variable = { var = desc25 value = 0 }
+				set_variable = { var = desc25check value = 120 }
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					free_building_slots = { building = industrial_complex size > 1 include_locked = no }
+				}
+				add_building_construction = {
+                    type = industrial_complex
+                    level = 1 
+                    instant_build = yes
+                }
+			}
+				
+}
+if = { limit = {
+check_variable= { desc26 > 0 } 
+} 
+				add_to_variable = { var = desc26 value = 1 }
+				subtract_from_variable  = { var = desc26check value = 1 }
+}
+if = { limit = {
+check_variable= { desc26 > 120 } 
+} 
+				set_variable = { var = desc26 value = 0 }
+				set_variable = { var = desc26check value = 120 }
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					free_building_slots = { building = arms_factory  size > 1 include_locked = no }
+				}
+				add_building_construction = {
+                    type = arms_factory 
+                    level = 1 
+                    instant_build = yes
+                }
+			}
+				
+}
+if = { limit = {
+check_variable= { desc27 > 0 } 
+} 
+				add_to_variable = { var = desc27 value = 1 }
+				subtract_from_variable  = { var = desc27check value = 1 }
+}
+if = { limit = {
+check_variable= { desc27 > 120 } 
+} 
+				set_variable = { var = desc27 value = 0 }
+				set_variable = { var = desc27check value = 120 }
+			random_owned_state = {
+				limit = {
+                is_coastal = yes
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					free_building_slots = { building = dockyard   size > 1 include_locked = no }
+				}
+				add_building_construction = {
+                    type = dockyard  
+                    level = 1 
+                    instant_build = yes
+                }
+			}
+				
+}
+if = { limit = {
+check_variable= { desc28 > 0 } 
+} 
+				add_to_variable = { var = desc28 value = 1 }
+				subtract_from_variable  = { var = desc28check value = 1 }
+}
+if = { limit = {
+check_variable= { desc28 > 45 } 
+} 
+				set_variable = { var = desc28 value = 0 }
+				set_variable = { var = desc28check value = 45 }
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
+				
+}
+if = { limit = {
+check_variable= { desc29 > 0 } 
+} 
+				add_to_variable = { var = desc29 value = 1 }
+				subtract_from_variable  = { var = desc29check value = 1 }
+}
+if = { limit = {
+check_variable= { desc29 > 180 } 
+} 
+				set_variable = { var = desc29 value = 0 }
+				set_variable = { var = desc29check value = 180 }
+
+				
+}
+if = { limit = {
+check_variable= { desc30 > 0 } 
+} 
+				add_to_variable = { var = desc30 value = 1 }
+				subtract_from_variable  = { var = desc30check value = 1 }
+}
+if = { limit = {
+check_variable= { desc30 > 90 } 
+} 
+				set_variable = { var = desc30 value = 0 }
+				set_variable = { var = desc30check value = 90 }
+add_stability = 0.01
+				
+}
+if = { limit = {
+check_variable= { desc39 > 0 } 
+} 
+				add_to_variable = { var = desc39 value = 1 }
+				subtract_from_variable  = { var = desc39check value = 1 }
+}
+if = { limit = {
+check_variable= { desc39 > 120 } 
+} 
+				set_variable = { var = desc39 value = 0 }
+				set_variable = { var = desc39check value = 120 }
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = grain_mill
+					level = 1
+					instant_build = yes
+				}
+                             }
+				
+}
+if = { limit = {
+check_variable= { desc40 > 0 } 
+} 
+				add_to_variable = { var = desc40 value = 1 }
+				subtract_from_variable  = { var = desc40check value = 1 }
+}
+if = { limit = {
+check_variable= { desc40 > 120 } 
+} 
+				set_variable = { var = desc40 value = 0 }
+				set_variable = { var = desc40check value = 120 }
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = steel_mill
+					level = 1
+					instant_build = yes
+				}
+                             }
+				
+}
+if = { limit = {
+check_variable= { desc31 > 0 } 
+} 
+				add_to_variable = { var = desc31 value = 1 }
+				subtract_from_variable  = { var = desc31check value = 1 }
+}
+if = { limit = {
+check_variable= { desc31 > 90 } 
+} 
+				set_variable = { var = desc31 value = 0 }
+				set_variable = { var = desc31check value = 180 }
+add_stability = 0.02
+				
+}
+if = { limit = {
+check_variable= { desc32 > 0 } 
+} 
+				add_to_variable = { var = desc32 value = 1 }
+				subtract_from_variable  = { var = desc32check value = 1 }
+}
+if = { limit = {
+check_variable= { desc32 > 30 } 
+} 
+				set_variable = { var = desc32 value = 0 }
+				set_variable = { var = desc32check value = 30 }
+	add_to_variable = { var = mdx value = prov }
+	add_to_variable = { var = minflation value = 7}
+				
+}
+if = { limit = {
+check_variable= { desc33 > 0 } 
+} 
+				add_to_variable = { var = desc33 value = 1 }
+				subtract_from_variable  = { var = desc33check value = 1 }
+}
+if = { limit = {
+check_variable= { desc33 > 30 } 
+} 
+				set_variable = { var = desc33 value = 0 }
+				set_variable = { var = desc33check value = 30 }
+	add_to_variable = { var = mdx value = provil }
+				
+}
+if = { limit = {
+check_variable= { desc34 > 0 } 
+} 
+				add_to_variable = { var = desc34 value = 1 }
+				subtract_from_variable  = { var = desc34check value = 1 }
+}
+if = { limit = {
+check_variable= { desc34 > 30 } 
+} 
+				set_variable = { var = desc34 value = 0 }
+				set_variable = { var = desc34check value = 30 }
+	add_to_variable = { var = dx value = prov }
+				
+}
+
+
+
+
+if = { limit = {
+check_variable= { desc2 > 0 } 
+} 
+				add_to_variable = { var = desc2 value = 1 }
+				subtract_from_variable  = { var = desc2check value = 1 }
+}
+if = { limit = {
+check_variable= { desc2 > 90 } 
+} 
+				set_variable = { var = desc2 value = 0 }
+				set_variable = { var = desc2check value = 90 }
+				add_war_support = 0.05
+}
+if = { limit = {
+check_variable= { desc3 > 0 } 
+} 
+				add_to_variable = { var = desc3 value = 1 }
+				subtract_from_variable  = { var = desc3check value = 1 }
+}
+if = { limit = {
+check_variable= { desc3 > 60 } 
+} 
+				set_variable = { var = desc3 value = 0 }
+				set_variable = { var = desc3check value = 60 }
+							army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+}
+if = { limit = {
+check_variable= { desc4 > 0 } 
+} 
+				add_to_variable = { var = desc4 value = 1 }
+				subtract_from_variable  = { var = desc4check value = 1 }
+}
+if = { limit = {
+check_variable= { desc4 > 60 } 
+} 
+				set_variable = { var = desc4 value = 0 }
+				set_variable = { var = desc4check value = 60 }
+						add_manpower = naem 	
+}
+if = { limit = {
+check_variable= { desc5 > 0 } 
+} 
+				add_to_variable = { var = desc5 value = 1 }
+				subtract_from_variable  = { var = desc5check value = 1 }
+}
+if = { limit = {
+check_variable= { desc5 > 60 } 
+} 
+				set_variable = { var = desc5 value = 0 }
+				set_variable = { var = desc5check value = 60 }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = proarmfix  }
+}
+if = { limit = {
+check_variable= { desc6 > 0 } 
+} 
+				add_to_variable = { var = desc6 value = 1 }
+				subtract_from_variable  = { var = desc6check value = 1 }
+}
+if = { limit = {
+check_variable= { desc6 > 60 } 
+} 
+				set_variable = { var = desc6 value = 0 }
+				set_variable = { var = desc6check value = 60 }
+			add_equipment_to_stockpile = { type = support_equipment  amount = prodop   }
+}
+if = { limit = {
+check_variable= { desc38 > 0 } 
+} 
+				add_to_variable = { var = desc38 value = 1 }
+				subtract_from_variable  = { var = desc38check value = 1 }
+}
+if = { limit = {
+check_variable= { desc38 > 60 } 
+} 
+				set_variable = { var = desc38 value = 0 }
+				set_variable = { var = desc38check value = 60 }
+			add_equipment_to_stockpile = { type = motorized_equipment amount = protra   }
+}
+if = { limit = {
+check_variable= { desc7 > 0 } 
+} 
+				add_to_variable = { var = desc7 value = 1 }
+				subtract_from_variable  = { var = desc7check value = 1 }
+}
+if = { limit = {
+check_variable= { desc7 > 90 } 
+} 
+				set_variable = { var = desc7 value = 0 }
+				set_variable = { var = desc7check value = 90 }
+}
+if = { limit = {
+check_variable= { desc8 > 0 } 
+} 
+				add_to_variable = { var = desc8 value = 1 }
+				subtract_from_variable  = { var = desc8check value = 1 }
+}
+if = { limit = {
+check_variable= { desc8 > 90 } 
+} 
+				set_variable = { var = desc8 value = 0 }
+				set_variable = { var = desc8check value = 90 }
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+}
+if = { limit = {
+check_variable= { desc9 > 0 } 
+} 
+				add_to_variable = { var = desc9 value = 1 }
+				subtract_from_variable  = { var = desc9check value = 1 }
+}
+if = { limit = {
+check_variable= { desc9 > 90 } 
+} 
+				set_variable = { var = desc9 value = 0 }
+				set_variable = { var = desc9check value = 90 }
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+}
+if = { limit = {
+check_variable= { desc10 > 0 } 
+} 
+				add_to_variable = { var = desc10 value = 1 }
+				subtract_from_variable  = { var = desc10check value = 1 }
+}
+if = { limit = {
+check_variable= { desc10 > 90 } 
+} 
+				set_variable = { var = desc10 value = 0 }
+				set_variable = { var = desc10check value = 90 }
+			add_tech_bonus = {
+				name = freteeze_bonus
+				bonus = 0.5
+				uses = 1
+				category = freteezer
+			}
+}
+if = { limit = {
+check_variable= { desc35 > 0 } 
+} 
+				add_to_variable = { var = desc35 value = 1 }
+				subtract_from_variable  = { var = desc35check value = 1 }
+}
+if = { limit = {
+check_variable= { desc35 > 90 } 
+} 
+				set_variable = { var = desc35 value = 0 }
+				set_variable = { var = desc35check value = 90 }
+			add_tech_bonus = {
+				name = freteeze_bonus
+				bonus = 0.5
+				uses = 1
+				category = medecinetr
+			}
+}
+if = { limit = {
+check_variable= { desc36 > 0 } 
+} 
+				add_to_variable = { var = desc36 value = 1 }
+				subtract_from_variable  = { var = desc36check value = 1 }
+}
+if = { limit = {
+check_variable= { desc36 > 90 } 
+} 
+				set_variable = { var = desc36 value = 0 }
+				set_variable = { var = desc36check value = 90 }
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+}
+if = { limit = {
+check_variable= { desc37 > 0 } 
+} 
+				add_to_variable = { var = desc37 value = 1 }
+				subtract_from_variable  = { var = desc37check value = 1 }
+}
+if = { limit = {
+check_variable= { desc37 > 90 } 
+} 
+				set_variable = { var = desc37 value = 0 }
+				set_variable = { var = desc37check value = 90 }
+}
+}
+
+}
+######################
+}

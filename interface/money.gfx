@@ -1,0 +1,177 @@
+spriteTypes = {	
+	
+
+	spriteType = {
+		name = "GFX_plus_icon"
+		textureFile = "gfx/plus_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Bureaucrats_mini"
+		textureFile = "gfx/Bureaucrats_mini.dds"
+	}
+	spriteType = {
+		name = "GFX_schastie"
+		textureFile = "gfx/schastie.dds"
+	}
+	spriteType = {
+		name = "GFX_governator_n"
+		textureFile = "gfx/interface/dynamic_modifier/governator_n.dds"
+	}
+
+spriteType = {
+		name = "GFX_money"
+		texturefile = "gfx/money.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_inflation"
+		texturefile = "gfx/inflation.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_desc_in_c"
+		texturefile = "gfx/interface/desc_in_c.dds"
+	}
+		spriteType = {
+		name = "GFX_millitary_parade_d"
+		texturefile = "gfx/interface/decisions/millitary_parade_d.dds"
+	}
+		spriteType = {
+		name = "GFX_voen_prop_d"
+		texturefile = "gfx/interface/decisions/voen_prop_d.dds"
+	}
+		spriteType = {
+		name = "GFX_prepare_civil_war_d"
+		texturefile = "gfx/interface/decisions/prepare_civil_war_d.dds"
+	}
+		spriteType = {
+		name = "GFX_army_support_d"
+		texturefile = "gfx/interface/decisions/army_support_d.dds"
+	}
+		spriteType = {
+		name = "GFX_generic_industry_d"
+		texturefile = "gfx/interface/decisions/generic_industry_d.dds"
+	}
+		spriteType = {
+		name = "GFX_support_eq_d"
+		texturefile = "gfx/interface/decisions/support_eq_d.dds"
+	}
+		spriteType = {
+		name = "GFX_gold_des_d"
+		texturefile = "gfx/interface/decisions/gold_des_d.dds"
+	}
+		spriteType = {
+		name = "GFX_isuyatie_mon_d"
+		texturefile = "gfx/interface/decisions/isuyatie_mon_d.dds"
+	}
+		spriteType = {
+		name = "GFX_cons_des_d"
+		texturefile = "gfx/interface/decisions/cons_des_d.dds"
+	}
+		spriteType = {
+		name = "GFX_consb_des_d"
+		texturefile = "gfx/interface/decisions/consb_des_d.dds"
+	}
+		spriteType = {
+		name = "GFX_politb_des_d"
+		texturefile = "gfx/interface/decisions/politb_des_d.dds"
+	}
+		spriteType = {
+		name = "GFX_work_rights_d"
+		texturefile = "gfx/interface/decisions/work_rights_d.dds"
+	}
+		spriteType = {
+		name = "GFX_social_pr_d"
+		texturefile = "gfx/interface/decisions/social_pr_d.dds"
+	}
+		spriteType = {
+		name = "GFX_pacif_d"
+		texturefile = "gfx/interface/decisions/pacif_d.dds"
+	}
+		spriteType = {
+		name = "GFX_civ_des_d"
+		texturefile = "gfx/interface/decisions/civ_des_d.dds"
+	}
+		spriteType = {
+		name = "GFX_mil_des_d"
+		texturefile = "gfx/interface/decisions/mil_des_d.dds"
+	}
+		spriteType = {
+		name = "GFX_nav_des_d"
+		texturefile = "gfx/interface/decisions/nav_des_d.dds"
+	}
+		spriteType = {
+		name = "GFX_metal_d"
+		texturefile = "gfx/interface/decisions/metal_d.dds"
+	}
+		spriteType = {
+		name = "GFX_inf_des_d"
+		texturefile = "gfx/interface/decisions/inf_des_d.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ecgdp"
+		texturefile = "gfx/interface/ecgdp.dds"
+	}
+		spriteType = {
+		name = "GFX_res_des_d"
+		texturefile = "gfx/interface/decisions/res_des_d.dds"
+	}
+		spriteType = {
+		name = "GFX_prov_d"
+		texturefile = "gfx/interface/decisions/prov_d.dds"
+	}
+		spriteType = {
+		name = "GFX_generic_agriculture_d"
+		texturefile = "gfx/interface/decisions/generic_agriculture_d.dds"
+	}
+		spriteType = {
+		name = "GFX_nap_mon_d"
+		texturefile = "gfx/interface/decisions/nap_mon_d.dds"
+	}
+		spriteType = {
+		name = "GFX_buy_prov_d"
+		texturefile = "gfx/interface/decisions/buy_prov_d.dds"
+	}
+		spriteType = {
+		name = "GFX_prod_prov_d"
+		texturefile = "gfx/interface/decisions/prod_prov_d.dds"
+	}
+		spriteType = {
+		name = "GFX_res_d"
+		texturefile = "gfx/interface/decisions/res_d.dds"
+	}
+		spriteType = {
+		name = "GFX_res_weap_d"
+		texturefile = "gfx/interface/decisions/res_weap_d.dds"
+	}
+		spriteType = {
+		name = "GFX_res_stroy_d"
+		texturefile = "gfx/interface/decisions/res_stroy_d.dds"
+	}
+		spriteType = {
+		name = "GFX_res_agr_d"
+		texturefile = "gfx/interface/decisions/res_agr_d.dds"
+	}
+		spriteType = {
+		name = "GFX_res_med_d"
+		texturefile = "gfx/interface/decisions/res_med_d.dds"
+	}
+		spriteType = {
+		name = "GFX_res_mex_d"
+		texturefile = "gfx/interface/decisions/res_mex_d.dds"
+	}
+		spriteType = {
+		name = "GFX_buyciv_des_d"
+		texturefile = "gfx/interface/decisions/buyciv_des_d.dds"
+	}
+		spriteType = {
+		name = "GFX_motor_d"
+		texturefile = "gfx/interface/decisions/motor_d.dds"
+	}
+		spriteType = {
+		name = "GFX_farm_d"
+		texturefile = "gfx/interface/decisions/farm_d.dds"
+	}
+	
+}

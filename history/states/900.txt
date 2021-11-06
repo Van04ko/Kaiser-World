@@ -1,0 +1,21 @@
+
+state={
+	id=900
+	name="STATE_900" # Libyan Desert
+	manpower = 22633
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = LBA
+	}
+
+	provinces={
+		 7985 1994 10754 11951 1060 10785 1140 10104 1057 4191 
+	}
+}

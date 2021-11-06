@@ -1,0 +1,25 @@
+state={
+	id=907
+	name="STATE_907"
+
+	resources={
+      grain = 8 
+fishr = 14
+	}
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3 
+
+		}
+		add_core_of = BLR
+		add_core_of = UKR
+
+	}
+
+	provinces={
+		  215 3203 3293 6319 
+	}
+	manpower=207605 
+	state_category=pastoral
+}

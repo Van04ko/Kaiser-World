@@ -1,0 +1,29 @@
+state={
+	id=902
+	name="STATE_902"
+	resources={
+		tungsten=4.000
+grain = 12
+fishr = 6
+	}
+
+	history={
+		owner = GIB
+		victory_points = {
+			6902 1 
+		}
+		buildings = {
+			infrastructure = 4
+			sklad = 1
+
+		}
+		add_core_of = SPR
+
+	}
+
+	provinces={
+		3930 809 931 6954 11798 11851 
+	}
+	manpower=417652
+	state_category=rural
+}

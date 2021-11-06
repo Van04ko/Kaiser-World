@@ -1,0 +1,25 @@
+state={
+	id=846
+	name="STATE_846"
+
+	resources={
+      grain = 12 
+fishr = 6
+	}
+	history={
+		owner = SOV
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 1
+sklad = 1
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		 475 10262 12163 13008 642 
+	}
+	manpower=105133
+	state_category=pastoral
+}

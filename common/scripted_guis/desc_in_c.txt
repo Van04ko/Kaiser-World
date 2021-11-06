@@ -1,0 +1,463 @@
+scripted_gui = { 
+    desc_in_c = {
+        context_type = player_context
+		parent_window_token = top_bar
+		window_name = "desc_in_c"
+		
+		visible = {
+			is_ai = no
+		}
+		
+		effects = {
+			desc_in_cy_click = {
+				if = {
+					limit = {  check_variable = { gopen_door = 0 } }
+                                
+					set_variable = { gopen_door = 1 }
+				}
+				else = {
+					set_variable = { gopen_door = 0 }
+				}
+			}
+		}
+        
+		triggers = {
+        }
+    }
+
+   house = {
+    
+        context_type = player_context
+		
+		window_name = "house"
+		
+		visible = {
+			is_ai = no
+                        check_variable = { gopen_door = 1 }
+		}
+		
+		effects = {
+        
+
+			desc_in_cy1_click = {            
+				add_political_power = -50
+				set_variable = { desc1 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}
+
+			desc_in_cy11_click = {            
+				add_political_power = -25
+				set_variable = { desc11 = 1}
+	subtract_from_variable = { var = mdx value = prov}
+			}
+
+			desc_in_cy12_click = {            
+				add_political_power = -25
+				set_variable = { desc12 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}
+			desc_in_cy13_click = {            
+				add_political_power = -25
+				set_variable = { desc13 = 1}
+			add_timed_idea = { days = 90 idea = civilian_zatr_d } 
+			}
+			desc_in_cy14_click = {            
+				add_political_power = -25
+				set_variable = { desc14 = 1}
+			add_timed_idea = { days = 90 idea = civilian_bought_d } 
+	subtract_from_variable = { var = mdx value = provac}
+			}
+			desc_in_cy21_click = {            
+				add_political_power = -15
+				set_variable = { desc21 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}
+			desc_in_cy22_click = {            
+				add_political_power = -50
+				set_variable = { desc22 = 1}
+			add_timed_idea = { days = 90 idea = civilian_ul_d } 
+			}
+			desc_in_cy23_click = {            
+				add_political_power = -50
+				set_variable = { desc23 = 1}
+	subtract_from_variable = { var = mdx value = prov}
+			}
+			desc_in_cy24_click = {            
+				add_political_power = -25
+				set_variable = { desc24 = 1}
+			}
+			desc_in_cy25_click = {            
+				add_political_power = -25
+				set_variable = { desc25 = 1}
+	subtract_from_variable = { var = mdx value = 150}
+			}
+			desc_in_cy26_click = {            
+				add_political_power = -25
+				set_variable = { desc26 = 1}
+	subtract_from_variable = { var = mdx value = 150}
+			}
+			desc_in_cy27_click = {            
+				add_political_power = -25
+				set_variable = { desc27 = 1}
+	subtract_from_variable = { var = mdx value = 150}
+			}
+			desc_in_cy28_click = {            
+				add_political_power = -15
+				set_variable = { desc28 = 1}
+	subtract_from_variable = { var = mdx value = 30}
+			}
+			desc_in_cy29_click = {            
+				add_political_power = -15
+				set_variable = { desc29 = 1}
+			add_timed_idea = { days = 180 idea = closed_resourses } 
+			}
+			desc_in_cy30_click = {            
+				add_political_power = -15
+				set_variable = { desc30 = 1}
+subtract_from_variable = { var = dx value = provmax }
+			add_timed_idea = { days = 90 idea = razdacha_prov } 
+			}
+			desc_in_cy31_click = {            
+				add_political_power = -25
+				set_variable = { desc31 = 1}
+subtract_from_variable = { var = mdx value = prov }
+			add_timed_idea = { days = 180 idea = podd_farm } 
+			}
+			desc_in_cy32_click = {            
+				add_political_power = -25
+				set_variable = { desc32 = 1}
+			}
+			desc_in_cy33_click = {            
+				add_political_power = -15
+				set_variable = { desc33 = 1}
+subtract_from_variable = { var = dx value = provmax }
+			}
+			desc_in_cy34_click = {            
+				add_political_power = -15
+				set_variable = { desc34 = 1}
+subtract_from_variable = { var = mdx value = provil }
+	add_to_variable = { var = dx value = provmax}
+			}
+			desc_in_cy2_click = {            
+				add_political_power = -50
+				set_variable = { desc2 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}	
+	
+			desc_in_cy3_click = {            
+				add_political_power = -25
+				set_variable = { desc3 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}
+			desc_in_cy4_click = {            
+				add_political_power = -25
+				set_variable = { desc4 = 1}
+	subtract_from_variable = { var = mdx value = prov}
+			}
+			desc_in_cy5_click = {            
+				add_political_power = -15
+				set_variable = { desc5 = 1}
+	subtract_from_variable = { var = mdx value = prov}
+			}
+			desc_in_cy6_click = {            
+				add_political_power = -15
+				set_variable = { desc6 = 1}
+	subtract_from_variable = { var = mdx value = prov}
+			}
+			desc_in_cy38_click = {            
+				add_political_power = -15
+				set_variable = { desc38 = 1}
+	subtract_from_variable = { var = mdx value = prov}
+			}
+			desc_in_cy39_click = {            
+				add_political_power = -15
+				set_variable = { desc39 = 1}
+	subtract_from_variable = { var = mdx value = 100}
+			}
+			desc_in_cy40_click = {            
+				add_political_power = -15
+				set_variable = { desc40 = 1}
+	subtract_from_variable = { var = mdx value = 125}
+			}
+			desc_in_cy7_click = {            
+				add_political_power = -15
+				set_variable = { desc7 = 1}
+	subtract_from_variable = { var = mdx value = prov}
+			add_timed_idea = { days = 90 idea = desc_obrazov } 
+			}
+			desc_in_cy8_click = {            
+				add_political_power = -15
+				set_variable = { desc8 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}
+			desc_in_cy9_click = {            
+				add_political_power = -15
+				set_variable = { desc9 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}
+			desc_in_cy10_click = {            
+				add_political_power = -15
+				set_variable = { desc10 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}
+			desc_in_cy35_click = {            
+				add_political_power = -15
+				set_variable = { desc35 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}
+			desc_in_cy36_click = {            
+				add_political_power = -15
+				set_variable = { desc36 = 1}
+	subtract_from_variable = { var = mdx value = provil}
+			}
+			desc_in_cy37_click = {            
+				add_political_power = -25
+				set_variable = { desc37 = 1}
+	subtract_from_variable = { var = mdx value = 300}
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					free_building_slots = { building = industrial_complex size > 1 include_locked = no }
+				}
+				add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			}
+			button_close_click = {            
+					set_variable = { gopen_door = 0 }
+			}
+		}
+        
+		triggers = {
+           
+			button_add_click_enabled = {
+                                check_variable = { example1Variable < 10 }
+			}
+			desc_in_cy1_click_enabled = {
+                                 has_political_power > 50
+                                check_variable = { desc1 = 0 }
+                                check_variable = { mdx > prov}
+			has_war_support < 1
+			has_stability < 1
+			}
+			desc_in_cy11_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc11 = 0 }
+                                check_variable = { mdx > prov}
+		                check_variable={minflation > 0}
+			} 
+			desc_in_cy12_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc12 = 0 }
+                                check_variable = { mdx > provil}
+		                check_variable={minflation > 0}
+			} 
+			desc_in_cy13_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc13 = 0 }
+			num_of_factories > 0
+		                check_variable={minflation > 0}
+			} 
+			desc_in_cy14_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc14 = 0 }
+		                check_variable={minflation > 0}
+                                check_variable = { mdx > provac}
+			} 
+			desc_in_cy21_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc21 = 0 }
+                                check_variable = { mdx > provil}
+			} 
+			desc_in_cy22_click_enabled = {
+                                 has_political_power > 50
+                                check_variable = { desc22 = 0 }
+			num_of_factories > 0
+			has_stability < 1
+			} 
+			desc_in_cy23_click_enabled = {
+                                 has_political_power > 50
+                                check_variable = { desc23 = 0 }
+                                check_variable = { mdx > prov}
+			has_stability < 1
+			} 
+			desc_in_cy24_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc24 = 0 }
+			has_stability < 1
+			has_war_support > 0.2
+			} 
+			desc_in_cy25_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc25 = 0 }
+                                check_variable = { mdx > 150 }
+any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            	free_building_slots = { building = industrial_complex size > 1 include_locked = no }
+            } 
+			
+			} 
+			desc_in_cy26_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc26 = 0 }
+                                check_variable = { mdx > 150 }
+any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            	free_building_slots = { building = arms_factory size > 1 include_locked = no }
+            } 
+			
+			} 
+			desc_in_cy27_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc27 = 0 }
+                                check_variable = { mdx > 150 }
+any_state = {
+                is_coastal = yes
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            	free_building_slots = { building = dockyard size > 1 include_locked = no }
+            } 
+			
+			} 
+			desc_in_cy28_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc28 = 0 }
+                                check_variable = { mdx > 30 }
+			any_state = {
+            	NOT = { has_state_flag = infrastructure_building_slot_flag }
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            }
+			
+			} 
+			desc_in_cy29_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc29 = 0 }
+NOT ={ has_idea =closed_economy }
+			} 
+			desc_in_cy30_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc30 = 0 }
+                                check_variable = { dx > provmax }
+			} 
+			desc_in_cy31_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc31 = 0 }
+                                check_variable = { mdx > prov}
+			has_stability < 1
+			}           
+			desc_in_cy32_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc32 = 0 }
+			}           
+			desc_in_cy33_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc33 = 0 }
+		check_variable={dx > provmax}
+			}           
+			desc_in_cy34_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc34 = 0 }
+		check_variable={mdx > provil}
+			}           
+			desc_in_cy2_click_enabled = {
+                                 has_political_power > 50
+                                check_variable = { desc2 = 0 }
+		check_variable={mdx > prov}
+			has_stability < 1
+			}         
+			desc_in_cy3_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc3 = 0 }
+                                check_variable = { mdx > provil}
+			}       
+			desc_in_cy4_click_enabled = {
+                                 has_political_power > 25
+                                check_variable = { desc4 = 0 }
+                                check_variable = { mdx > prov}
+			} 
+			desc_in_cy5_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc5 = 0 }
+                                check_variable = { mdx > prov}
+			} 
+			desc_in_cy6_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc6 = 0 }
+                                check_variable = { mdx > prov}
+			} 
+			desc_in_cy38_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc38 = 0 }
+                                check_variable = { mdx > prov}
+								has_tech = motorised_infantry
+			} 
+			desc_in_cy39_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc39 = 0 }
+                                check_variable = { mdx > 100}
+any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            	free_building_slots = { building = grain_mill size > 1 include_locked = no }
+            } 
+			} 
+			desc_in_cy40_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc40 = 0 }
+                                check_variable = { mdx > 125}
+any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            	free_building_slots = { building = steel_mill size > 1 include_locked = no }
+            } 
+			} 
+			desc_in_cy7_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc7 = 0 }
+                                check_variable = { mdx > prov}
+			} 
+			desc_in_cy8_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc8 = 0 }
+                                check_variable = { mdx > provil}
+			} 
+			desc_in_cy9_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc9 = 0 }
+                                check_variable = { mdx > provil}
+			} 
+			desc_in_cy10_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc10 = 0 }
+                                check_variable = { mdx > provil}
+			} 
+			desc_in_cy35_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc35 = 0 }
+                                check_variable = { mdx > provil}
+			} 
+			desc_in_cy36_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc36 = 0 }
+                                check_variable = { mdx > provil}
+			} 
+			desc_in_cy37_click_enabled = {
+                                 has_political_power > 15
+                                check_variable = { desc37 = 0 }
+                                check_variable = { mdx > 300}
+			any_state = {
+            	is_fully_controlled_by = ROOT
+            	is_owned_by = ROOT
+            	free_building_slots = { building = industrial_complex size > 1 include_locked = no }
+            }
+			} 
+        }
+    }
+}

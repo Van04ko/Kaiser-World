@@ -1,0 +1,28 @@
+
+state={
+	id=913
+	name="STATE_913"
+	manpower = 2353130
+	
+	resources={
+      grain = 26
+fishr = 4
+	}
+	state_category = pastoral
+	
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+			sklad = 1
+
+		}
+	}
+
+	provinces={
+		 7812 1558 12337 1627 4561 1499 4633 7582 4506 12485 4876 1502 13260
+	}
+}

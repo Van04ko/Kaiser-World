@@ -1,0 +1,31 @@
+
+state={
+	id=852
+	name="STATE_852" # Thessaly
+	manpower=82500
+	
+	resources={
+      grain = 6 
+fishr = 16
+	}
+	state_category = wasteland
+
+	history={
+		owner = GRE
+		victory_points = {
+			3973 3
+		} 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+sklad = 1
+
+		}
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		3973 6930 
+	}
+}

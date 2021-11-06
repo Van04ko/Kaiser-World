@@ -1,0 +1,28 @@
+state={
+	id=95
+	name="STATE_95"
+
+	resources={
+      grain = 16
+fishr = 4
+	}
+	history={ 
+		owner = GER
+		buildings = {
+			infrastructure = 5
+			air_base = 3
+			sklad = 1
+
+		}
+		add_core_of = POL
+		add_core_of = BLR
+
+	}
+
+	provinces={
+		318 3281 3366 3393 13206 
+	}
+	manpower=1008900
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

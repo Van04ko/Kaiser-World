@@ -1,0 +1,21 @@
+
+state={
+	id=820
+	name="STATE_820" # Bourgogne
+	manpower = 370800
+	
+	state_category = city
+	
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		13236 3669 680 9644 3506  
+	}
+}

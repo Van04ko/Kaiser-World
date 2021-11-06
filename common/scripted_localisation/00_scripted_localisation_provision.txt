@@ -1,0 +1,15 @@
+
+defined_text = { # Country
+	name = GetProvisionTooltip
+	text = {
+		localization_key = GRAIN_TOOLTIP_BASE
+	}
+}
+
+
+defined_text = { # Country
+	name = GetBloodyTooltip
+	text = {
+		localization_key = BLOODY_TOOLTIP_BASE
+	}
+}

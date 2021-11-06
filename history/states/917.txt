@@ -1,0 +1,27 @@
+
+state={
+	id=917
+	name="STATE_917"
+	manpower = 42130
+	
+	resources={
+      grain = 6
+	}
+	state_category = wasteland
+	
+	history={
+		owner = KVJ
+		add_core_of = KVJ
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 7 
+
+		} 
+	}
+
+	provinces={
+		13252 13262 13249 13250 13248
+	}
+}

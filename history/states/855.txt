@@ -1,0 +1,36 @@
+
+state={
+	id=855
+	name="STATE_855"
+	manpower = 360900
+	
+	resources={
+      grain = 14 
+fishr = 18
+	}
+	state_category = pastoral
+	
+
+	history={
+		victory_points = {
+			10203 1
+		}
+		victory_points = {
+			3914 3
+		}
+		owner = GRE
+		buildings = {
+			infrastructure = 3
+sklad = 1
+			9805 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GRE
+	}
+
+	provinces = {
+		10203 3914 3980 841 9805 
+	}
+}
+

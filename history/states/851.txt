@@ -1,0 +1,29 @@
+
+state={
+	id=851
+	name="STATE_851" # Thessaly
+	manpower=112500
+	
+	resources={
+      grain = 4 
+fishr = 21
+	}
+	state_category = pastoral
+
+	history={
+		owner = GRE
+		victory_points = {
+			7127 3
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		7127  
+	}
+}
